@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="common_dark">#2a2a2a</color>
+    <color name="common_gray">#9a9a9a</color>
+    <color name="custom_bg">#e2eefc</color>
+    <color name="custom_color">#51c7d1</color>
+    <color name="custom_color_shallow">#80d0dc</color>
+    <color name="divide_gray">#dddddd</color>
+    <color name="main_tab">#707070</color>
+    <color name="mask">#60000000</color>
+    <color name="red">#ff0000</color>
+    <color name="shallow_gray">#bababa</color>
+    <color name="tint_bg">#f2f2f2</color>
+    <color name="titlebar_background">#1E1E1E</color>
+    <color name="translucent_background">#90000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="PullToZoomView"><attr format="reference" name="headerView"/><attr format="reference" name="contentView"/><attr format="reference" name="zoomView"/><attr format="boolean" name="isHeaderParallax"/></declare-styleable>
+    <item name="adapter_item_tag_key" type="id">image_tag</item>
+    <item name="scrollview" type="id">scroll</item>
+    <string name="app_name">common</string>
+    <string name="cancel">取消</string>
+    <string name="choose_photo">选择照片</string>
+    <string name="connect_fail">网络状况不佳，请稍后连接</string>
+    <string name="convert_fail">返回数据格式有误</string>
+    <string name="loading">加载中</string>
+    <string name="login_again">您的账号已在其他设备使用，请重新登录</string>
+    <string name="ok">确定</string>
+    <string name="take_photo">拍摄照片</string>
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_trans</item>
+        <item name="android:windowExitAnimation">@anim/bottom_trans_out</item>
+    </style>
+    <style name="ActionSheetDialogAnimationRight" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/right_trans</item>
+        <item name="android:windowExitAnimation">@anim/right_trans_out</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="Property_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_gray</item>
+    </style>
+    <style name="my_dialog" parent="@style/sheet_dialog">
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <style name="pay_dialog" parent="@style/sheet_dialog">
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimationRight</item>
+    </style>
+    <style name="sheet_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+</resources>

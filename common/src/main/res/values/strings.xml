@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">common</string>
+    <string name="loading">加载中</string>
+    <string name="login_again">您的账号已在其他设备使用，请重新登录</string>
+    <string name="convert_fail">返回数据格式有误</string>
+    <string name="connect_fail">网络状况不佳，请稍后连接</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="take_photo">拍摄照片</string>
+    <string name="choose_photo">选择照片</string>
+</resources>
