@@ -52,8 +52,16 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_gf_camera.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\drawable-xxxhdpi\\ic_gf_camera.png"
+    },
+    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_gf_preview.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\drawable-xxxhdpi\\ic_gf_preview.png"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
@@ -88,8 +96,16 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_gf_rotate.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\drawable-xxxhdpi\\ic_gf_rotate.png"
+    },
+    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_gf_done.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\drawable-xxxhdpi\\ic_gf_done.png"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
@@ -126,6 +142,10 @@
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_gf_clear.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\drawable-xxxhdpi\\ic_gf_clear.png"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
@@ -206,5 +226,13 @@
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_gf_back.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\drawable-xxxhdpi\\ic_gf_back.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_gf_crop.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\drawable-xxxhdpi\\ic_gf_crop.png"
     }
 ]

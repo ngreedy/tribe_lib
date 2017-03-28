@@ -4,10 +4,6 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_dialog_title_material.xml"
     },
@@ -28,10 +24,6 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
@@ -48,28 +40,12 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_media.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_layout.xml",
@@ -80,16 +56,8 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -100,31 +68,15 @@
         "source": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_normal_layout.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
@@ -136,18 +88,6 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_status_last.xml",
-        "source": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\view_status_last.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\info_time_picker_board.xml",
         "source": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\info_time_picker_board.xml"
     },
@@ -156,20 +96,8 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_refresh_recycler.xml",
         "source": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\view_refresh_recycler.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_main.xml",
-        "source": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
@@ -178,18 +106,6 @@
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_main.xml",
-        "source": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_layout.xml",
@@ -208,12 +124,172 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_lines_media.xml"
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gf_adapter_photo_list_item.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\layout\\gf_adapter_photo_list_item.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\photo_board.xml",
+        "source": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\photo_board.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gf_adapter_edit_list.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\layout\\gf_adapter_edit_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\custom_pwd.xml",
+        "source": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\custom_pwd.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\custom_pwd.xml",
+        "source": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\custom_pwd.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gf_adapter_folder_list_item.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\layout\\gf_adapter_folder_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gf_activity_photo_select.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\layout\\gf_activity_photo_select.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gf_activity_photo_preview.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\layout\\gf_activity_photo_preview.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gf_activity_photo_edit.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\layout\\gf_activity_photo_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_status_last.xml",
+        "source": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\view_status_last.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gf_adapter_preview_viewpgaer_item.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\layout\\gf_adapter_preview_viewpgaer_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\simple_choose_board.xml",
@@ -228,20 +304,8 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\photo_board.xml",
-        "source": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\photo_board.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_content_include.xml",
@@ -260,20 +324,12 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_media_custom.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
@@ -292,40 +348,16 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\custom_pwd.xml",
-        "source": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\custom_pwd.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\custom_pwd.xml",
-        "source": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\custom_pwd.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
@@ -338,10 +370,6 @@
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",

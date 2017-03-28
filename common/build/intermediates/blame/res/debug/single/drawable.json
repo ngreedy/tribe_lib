@@ -216,6 +216,10 @@
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_gf_crop_texture.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\drawable\\bg_gf_crop_texture.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },

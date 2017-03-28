@@ -158,6 +158,25 @@
                         "endOffset": 323
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 328,
+                    "endColumn": 50,
+                    "endOffset": 374
+                },
+                "from": {
+                    "file": "C:\\Users\\admin\\.android\\build-cache\\89db64c64b045deba9e6fc355443f0f5140dd75b\\output\\res\\values-land\\values-land.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 190,
+                        "endColumn": 50,
+                        "endOffset": 236
+                    }
+                }
             }
         ]
     }
