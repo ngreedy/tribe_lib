@@ -8,9 +8,6 @@ import android.os.Environment;
  */
 public abstract class BaseApplication extends Application {
     private static BaseApplication instance;
-    private String baseUrl;
-    private Object userInfo;
-    public  String path = Environment.getExternalStorageDirectory().toString() + "/tribe/";
 
     @Override
     public void onCreate() {
@@ -25,23 +22,6 @@ public abstract class BaseApplication extends Application {
 
     public abstract void onInitialize();
 
+    public abstract String getFilePath();
 
-    public String getBaseUrl() {
-        return baseUrl;
-    }
-
-    public abstract void setBaseUrl(String url);
-    public abstract void setUserInfo(Object userInfo);
-
-    public void setCustomFilePath(String path){
-        this.path=path;
-    }
-
-    public String getFilePath(){
-        return path;
-    }
-
-    public Object getUserInfo() {
-        return userInfo;
-    }
 }

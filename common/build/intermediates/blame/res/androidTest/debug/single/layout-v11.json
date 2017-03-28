@@ -1,26 +1,50 @@
 [
     {
-        "merged": "C:\\Users\\admin\\Desktop\\PermissionGrantor-master\\CommonJar\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
-    },
-    {
-        "merged": "C:\\Users\\admin\\Desktop\\PermissionGrantor-master\\CommonJar\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_media_action.xml",
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_media_action.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\PermissionGrantor-master\\CommonJar\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\PermissionGrantor-master\\CommonJar\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media.xml",
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\PermissionGrantor-master\\CommonJar\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_media_cancel_action.xml",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\PermissionGrantor-master\\CommonJar\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
     }
 ]

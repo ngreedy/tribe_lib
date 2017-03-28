@@ -1,14 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\admin\\Desktop\\PermissionGrantor-master\\CommonJar\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png",
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\PermissionGrantor-master\\CommonJar\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png",
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\PermissionGrantor-master\\CommonJar\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "merged": "C:\\Users\\admin\\Desktop\\common\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\common\\TribalcLib\\tribe_lib\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "C:\\Users\\admin\\.android\\build-cache\\545653621165b1dc5780167a8a86e821861d30ee\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     }
 ]
