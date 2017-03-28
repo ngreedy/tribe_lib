@@ -13,6 +13,7 @@ public abstract class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         instance=this;
+
     }
 
 
