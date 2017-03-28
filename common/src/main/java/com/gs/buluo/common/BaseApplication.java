@@ -22,6 +22,7 @@ public abstract class BaseApplication extends Application {
 
     public abstract void onInitialize();
 
+
     public abstract String getFilePath();
 
 }
