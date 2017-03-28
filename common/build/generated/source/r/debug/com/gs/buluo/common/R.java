@@ -2489,7 +2489,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int action_mode_bar_stub=0x7f0b0050;
         public static int action_mode_close_button=0x7f0b0033;
         public static int action_text=0x7f0b0077;
-        public static int actions=0x7f0b0085;
+        public static int actions=0x7f0b0084;
         public static int activity_chooser_view_content=0x7f0b0034;
         public static int adapter_item_tag_key=0x7f0b0004;
         public static int add=0x7f0b001d;
@@ -2528,7 +2528,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int home=0x7f0b0005;
         public static int homeAsUp=0x7f0b0018;
         public static int icon=0x7f0b0039;
-        public static int icon_group=0x7f0b0086;
+        public static int icon_group=0x7f0b0085;
         public static int id_hour=0x7f0b0073;
         public static int id_mini=0x7f0b0074;
         public static int ifRoom=0x7f0b0029;
@@ -2571,7 +2571,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int progress_horizontal=0x7f0b0008;
         public static int radio=0x7f0b004d;
         public static int right=0x7f0b0030;
-        public static int right_icon=0x7f0b0084;
+        public static int right_icon=0x7f0b0086;
         public static int right_side=0x7f0b007f;
         public static int screen=0x7f0b001f;
         public static int scrollIndicatorDown=0x7f0b0043;
