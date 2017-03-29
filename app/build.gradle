@@ -7,9 +7,9 @@ android {
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             def outPath  = output.outputFile.parent
-            if ("true" .equals(IS_JENKINS)){
+//            if ("true" .equals(IS_JENKINS)){
                 outPath = 'F:/Jenkins/workspace/tribal'
-            }
+//            }
             output.outputFile = new File(
                     outPath,
                     "app.store-${variant.versionName}.apk".toLowerCase())
