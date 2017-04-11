@@ -32,7 +32,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
         if (e instanceof HttpException){
             //http error
             if (((HttpException) e).code()==401){  //token 过期，重新登录
-                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.login_again);
+                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(),R.string.login_again);
             }
         }else if (e instanceof IOException){
             ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.convert_fail);
