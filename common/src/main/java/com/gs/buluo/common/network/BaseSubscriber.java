@@ -21,10 +21,12 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
 
     @Override
     public void onStart() {
+        BaseApplication.showDialog(R.string.loading);
     }
 
     @Override
     public void onCompleted() {
+        BaseApplication.dismissDialog();
     }
 
     @Override

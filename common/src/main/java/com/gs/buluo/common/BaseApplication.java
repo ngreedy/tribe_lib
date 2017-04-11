@@ -33,6 +33,10 @@ public abstract class BaseApplication extends Application {
         mDialogObservable.showDialog(msg);
     }
 
+    public static void showDialog(int msg){
+        mDialogObservable.showDialog(getInstance().getApplicationContext().getString(msg));
+    }
+
     public static void dismissDialog(){
         mDialogObservable.showDialog(null);
     }
