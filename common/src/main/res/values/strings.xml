@@ -8,4 +8,6 @@
     <string name="cancel">取消</string>
     <string name="take_photo">拍摄照片</string>
     <string name="choose_photo">选择照片</string>
+    <string name="forbidden">连接错误  code：409</string>
+    <string name="not_found">信息丢失</string>
 </resources>
