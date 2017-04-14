@@ -15,7 +15,7 @@ import rx.Subscriber;
  * Created by hjn on 2017/3/20.
  */
 
-public abstract class BaseSubscriber<T extends BaseCode> extends Subscriber<T> {
+public abstract class BaseSubscriber<T> extends Subscriber<T> {
     private static final String TAG = "Network";
     private boolean showLoading = true;
 
