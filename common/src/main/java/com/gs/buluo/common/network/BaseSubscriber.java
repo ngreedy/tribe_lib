@@ -38,7 +38,9 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
 
     @Override
     public void onError(Throwable e) {
-        if (showLoading) BaseApplication.dismissDialog();
+        if (showLoading){
+            BaseApplication.dismissDialog();
+        }
         if (e instanceof HttpException) {       //http返回异常
             //http error
             if (((HttpException) e).code() == 401) {  //token 过期，重新登录
@@ -57,10 +59,16 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.forbidden);
             } else if (exception.getCode() == 500){
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
+            }else {
+                onFail(exception);
             }
         }else {
             ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
         }
+    }
+
+    public void onFail(ApiException e){
+
     }
 
     @Override
