@@ -19,7 +19,7 @@ public class LogInterceptor implements okhttp3.Interceptor {
     public Response intercept(Chain chain) throws IOException {
         Request request = chain.request();
         long start = System.currentTimeMillis();
-        Log.e(TAG, "request url:" + request.url() + " request body is " + (request.body() != null ? request.body().toString() : null));
+        Log.e(TAG, "request url:" + request.url() + " request body is " + (request.body() != null ? request.body().toString() : null)+"  token is "+request.header("Authorization"));
         Response response = chain.proceed(request);
         String bodyString ="";
         if (response!=null&&response.body()!=null){

@@ -6,6 +6,8 @@ import com.gs.buluo.common.BaseApplication;
 import com.gs.buluo.common.R;
 import com.gs.buluo.common.utils.ToastUtils;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.io.IOException;
 
 import retrofit2.adapter.rxjava.HttpException;
@@ -45,6 +47,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
             //http error
             if (((HttpException) e).code() == 401) {  //token 过期，重新登录
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.login_again);
+                EventBus.getDefault().post(new TokenEvent());
             }else if (((HttpException) e).code() == 500){
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
             }
@@ -52,12 +55,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
             ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.convert_fail);
         } else if (e instanceof ApiException) {
             ApiException exception = (ApiException) e;
-            if (exception.getCode() == 401){
-                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.login_again);
-            }else if (exception.getCode() == 409) {
-                //forbidden
-                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.forbidden);
-            } else if (exception.getCode() == 500){
+             if (exception.getCode() == 500){
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
             }else {
                 onFail(exception);
@@ -68,7 +66,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
     }
 
     public void onFail(ApiException e){
-
+        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), "连接错误,错误码"+e.getCode());
     }
 
     @Override
