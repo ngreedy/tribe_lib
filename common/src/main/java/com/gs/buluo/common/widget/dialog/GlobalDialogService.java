@@ -3,6 +3,7 @@ package com.gs.buluo.common.widget.dialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.app.Service;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
@@ -40,6 +41,12 @@ public class GlobalDialogService extends Service implements Observer {
                 mDialog.setContentView(view,new WindowManager.LayoutParams(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT));
                 TextView textView = (TextView) view.findViewById(R.id.message);
                 textView.setText(message);
+                mDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+
+                    }
+                });
 //                mDialog = ProgressDialog.show(TribeApplication.getInstance().getApplicationContext(), null, message);
             }
             if (mDialog != null && !mDialog.isShowing()) {
@@ -54,4 +61,6 @@ public class GlobalDialogService extends Service implements Observer {
             }
         }
     }
+
+
 }

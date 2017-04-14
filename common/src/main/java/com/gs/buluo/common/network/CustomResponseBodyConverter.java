@@ -37,10 +37,7 @@ public class CustomResponseBodyConverter<T> implements Converter<ResponseBody,T>
         BaseResponse baseResponse = gson.fromJson(response, BaseResponse.class);
         if (baseResponse.isCodeInvalid()) {
             value.close();
-            throw new ApiException(baseResponse.code, baseResponse.message,baseResponse.data);
-        }else if (baseResponse.data!=null&&baseResponse.data.code>300){
-            value.close();
-            throw new ApiException(baseResponse.code, baseResponse.message,baseResponse.data);
+            throw new ApiException(baseResponse.code, baseResponse.message);
         }
 
         MediaType contentType = value.contentType();

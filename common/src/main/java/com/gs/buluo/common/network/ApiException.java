@@ -7,16 +7,10 @@ package com.gs.buluo.common.network;
 public class ApiException extends RuntimeException {
     private  int code;          //http 返回码
     private String displayMessage;
-    private BaseCode baseCode;  //服务器返回码
 
-    public ApiException(int code, String message, BaseCode data) {
+    public ApiException(int code, String message) {
         this.code = code;
         displayMessage = message;
-        baseCode = data;
-    }
-
-    public int getResponseCode() {
-        return baseCode.code;
     }
 
     public void setCode(int code) {
