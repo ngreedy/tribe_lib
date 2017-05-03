@@ -11,4 +11,7 @@
     <string name="choose_photo">选择照片</string>
     <string name="forbidden">连接错误  code：409</string>
     <string name="not_found">信息丢失</string>
+    <string name="can_not_connect">数据在天上飞，暂时无法获取</string>
+    <string name="retry">轻点重试</string>
+    <string name="status_text_empty">啥也没有呢</string>
 </resources>

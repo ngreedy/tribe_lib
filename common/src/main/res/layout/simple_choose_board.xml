@@ -44,12 +44,12 @@
         android:layout_marginTop="14dp"
         android:orientation="horizontal" >
 
-        <com.gs.buluo.app.view.widget.wheel.WheelView
+        <com.gs.buluo.common.widget.wheel.WheelView
             android:id="@+id/simple_choose_wheel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" >
-        </com.gs.buluo.app.view.widget.wheel.WheelView>
+        </com.gs.buluo.common.widget.wheel.WheelView>
     </LinearLayout>
 
 </LinearLayout>
