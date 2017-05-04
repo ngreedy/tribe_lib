@@ -274,15 +274,19 @@ public class StatusLayout extends FrameLayout {
     }
 
     public void setErrorAction(final OnClickListener onErrorButtonClickListener) {
+        findViewById(R.id.error_click_view).setVisibility(VISIBLE);
         errorView.setOnClickListener(onErrorButtonClickListener);
     }
 
     public void setEmptyAction(final OnClickListener onEmptyButtonClickListener) {
+        findViewById(R.id.empty_click_view).setVisibility(VISIBLE);
         emptyView.setOnClickListener(onEmptyButtonClickListener);
     }
 
 
     public void setErrorAndEmptyAction(final OnClickListener errorAndEmptyAction) {
+        findViewById(R.id.error_click_view).setVisibility(VISIBLE);
+        findViewById(R.id.empty_click_view).setVisibility(VISIBLE);
         errorView.setOnClickListener(errorAndEmptyAction);
         emptyView.setOnClickListener(errorAndEmptyAction);
     }
