@@ -50,6 +50,8 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
                 EventBus.getDefault().post(new TokenEvent());
             }else if (((HttpException) e).code() == 500){
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
+            }else {
+                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), "Http异常，返回码"+((HttpException) e).code());
             }
         } else if (e instanceof IOException) {
             ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.convert_fail);
