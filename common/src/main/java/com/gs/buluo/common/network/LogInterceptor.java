@@ -37,7 +37,7 @@ public class LogInterceptor implements okhttp3.Interceptor {
         return response.newBuilder().body(ResponseBody.create(MediaType.parse("UTF-8"),bodyString)).build();
     }
 
-    private static String bodyToString(final Request request) {
+    private  String bodyToString(final Request request) {
         try {
             final Request copy = request.newBuilder().build();
             final Buffer buffer = new Buffer();
