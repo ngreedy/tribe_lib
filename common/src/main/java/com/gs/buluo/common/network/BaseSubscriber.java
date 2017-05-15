@@ -63,7 +63,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
                 onFail(exception);
             }
         }else {
-            ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
+            ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(),"未知错误: "+e.getMessage());
         }
     }
 
