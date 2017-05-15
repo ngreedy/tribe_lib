@@ -51,7 +51,7 @@ public class GlobalDialogService extends Service implements Observer {
             }
             if (mDialog != null && !mDialog.isShowing()) {
                 // 加入系统服务
-                mDialog.getWindow().setType((WindowManager.LayoutParams.TYPE_SYSTEM_ALERT));
+                mDialog.getWindow().setType((WindowManager.LayoutParams.TYPE_TOAST));
                 mDialog.show();
             }
         }else {
