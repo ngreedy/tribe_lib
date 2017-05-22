@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import com.gs.buluo.common.BaseApplication;
 import com.gs.buluo.common.R;
 import com.gs.buluo.common.utils.ToastUtils;
+import com.gs.buluo.common.widget.LoadingDialog;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -35,19 +36,17 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
 
     @Override
     public void onStart() {
-        if (showLoading) BaseApplication.showDialog(R.string.loading);
+
     }
 
     @Override
     public void onCompleted() {
-        if (showLoading) BaseApplication.dismissDialog();
+        LoadingDialog.getInstance().dismissDialog();
     }
 
     @Override
     public void onError(Throwable e) {
-        if (showLoading) {
-            BaseApplication.dismissDialog();
-        }
+        LoadingDialog.getInstance().dismissDialog();
         if (e instanceof HttpException) {       //http返回异常
             //http error
             if (((HttpException) e).code() == 401) {  //token 过期，重新登录
