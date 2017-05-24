@@ -44,6 +44,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
         LoadingDialog.getInstance().dismissDialog();
     }
 
+
     @Override
     public void onError(Throwable e) {
         LoadingDialog.getInstance().dismissDialog();
