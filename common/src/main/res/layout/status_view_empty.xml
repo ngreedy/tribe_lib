@@ -26,8 +26,8 @@
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
         android:text="@string/status_text_empty"
-        android:textColor="#33475f"
-        android:textSize="16sp" />
+        android:textColor="#2a2a2a"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/empty_click_view"
