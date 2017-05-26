@@ -60,7 +60,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
             if (exception.getCode() == 500) {
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
             } else if (exception.getCode() == 505) {//强制更新
-                EventBus.getDefault().post(new ForceUpdateEvent());
+                EventBus.getDefault().post(new ForceUpdateEvent(true));
             } else {
                 onFail(exception);
             }
