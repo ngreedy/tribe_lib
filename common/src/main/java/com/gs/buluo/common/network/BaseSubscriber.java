@@ -2,7 +2,7 @@ package com.gs.buluo.common.network;
 
 
 import com.gs.buluo.common.BaseApplication;
-import com.gs.buluo.common.ForceUpdateEvent;
+import com.gs.buluo.common.UpdateEvent;
 import com.gs.buluo.common.R;
 import com.gs.buluo.common.utils.ToastUtils;
 import com.gs.buluo.common.widget.LoadingDialog;
@@ -60,7 +60,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
             if (exception.getCode() == 500) {
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
             } else if (exception.getCode() == 505) {//强制更新
-                EventBus.getDefault().post(new ForceUpdateEvent(true));
+                EventBus.getDefault().post(new UpdateEvent(false));
             } else {
                 onFail(exception);
             }
