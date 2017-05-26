@@ -1,13 +1,8 @@
 package com.gs.buluo.common.network;
 
 
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.LinearLayout;
-
 import com.gs.buluo.common.BaseApplication;
+import com.gs.buluo.common.ForceUpdateEvent;
 import com.gs.buluo.common.R;
 import com.gs.buluo.common.utils.ToastUtils;
 import com.gs.buluo.common.widget.LoadingDialog;
@@ -64,11 +59,13 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
             ApiException exception = (ApiException) e;
             if (exception.getCode() == 500) {
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
+            } else if (exception.getCode() == 505) {//强制更新
+                EventBus.getDefault().post(new ForceUpdateEvent());
             } else {
                 onFail(exception);
             }
         } else {
-            ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), "未知错误,请稍后重试" );
+            ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), "未知错误,请稍后重试");
         }
     }
 
