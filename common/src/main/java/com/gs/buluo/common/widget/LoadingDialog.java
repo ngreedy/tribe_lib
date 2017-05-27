@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -17,61 +16,67 @@ import com.gs.buluo.common.R;
 
 public class LoadingDialog {
 
-	private Dialog mDialog;
-	private static LoadingDialog instance = null;
+    private Dialog mDialog;
+    private static LoadingDialog instance = null;
 
-	public static synchronized LoadingDialog getInstance() {
-		if (instance == null) {
-			instance = new LoadingDialog();
-		}
-		return instance;
-	}
-	
-	public void show(Context context, String message, boolean cancelable){
-		mDialog =  createLoadingDialog(context, message, cancelable);
-		mDialog.show();
-	}
-	public void show(Context context, int message, boolean cancelable){
-		mDialog =  createLoadingDialog(context,  context.getResources().getString(message),cancelable);
-		mDialog.show();
-	}
-	public Dialog createLoadingDialog(Context context, String msg ,boolean cancelable) {
+    public static synchronized LoadingDialog getInstance() {
+        if (instance == null) {
+            instance = new LoadingDialog();
+        }
+        return instance;
+    }
 
-		LayoutInflater inflater = LayoutInflater.from(context);
-		View v = inflater.inflate(R.layout.dialog_my, null);// 得到加载view
-		RelativeLayout layout = (RelativeLayout) v.findViewById(R.id.dialog_view);// 加载布局
-		// main.xml中的ImageView
+    public void show(Context context, String message, boolean cancelable) {
+        if (mDialog == null) {
+            mDialog = createLoadingDialog(context, message, cancelable);
+        }
+        mDialog.show();
+    }
 
-		ImageView spaceshipImage = (ImageView) v.findViewById(R.id.img);
-		TextView tipTextView = (TextView) v.findViewById(R.id.tipTextView);// 提示文字
-		// 加载动画
-		Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(
-				context, R.anim.loading_animation);
-		// 使用ImageView显示动画
-		hyperspaceJumpAnimation.setInterpolator(new LinearInterpolator());
-		spaceshipImage.startAnimation(hyperspaceJumpAnimation);
-		tipTextView.setText(msg);// 设置加载信息
+    public void show(Context context, int message, boolean cancelable) {
+        if (mDialog == null) {
+            mDialog = createLoadingDialog(context, context.getResources().getString(message), cancelable);
+        }
+        mDialog.show();
+    }
 
-		Dialog loadingDialog = new Dialog(context, R.style.loading_dialog);// 创建自定义样式dialog
+    public Dialog createLoadingDialog(Context context, String msg, boolean cancelable) {
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View v = inflater.inflate(R.layout.dialog_my, null);// 得到加载view
+        RelativeLayout layout = (RelativeLayout) v.findViewById(R.id.dialog_view);// 加载布局
+        // main.xml中的ImageView
 
-		loadingDialog.setCancelable(cancelable);// 不可以用“返回键”取消
-		loadingDialog.setContentView(layout, new LinearLayout.LayoutParams(
-				LinearLayout.LayoutParams.MATCH_PARENT,
-				LinearLayout.LayoutParams.MATCH_PARENT));// 设置布局
-		return loadingDialog;
-	}
+        ImageView spaceshipImage = (ImageView) v.findViewById(R.id.img);
+        TextView tipTextView = (TextView) v.findViewById(R.id.tipTextView);// 提示文字
+        // 加载动画
+        Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(
+                context, R.anim.loading_animation);
+        // 使用ImageView显示动画
+        hyperspaceJumpAnimation.setInterpolator(new LinearInterpolator());
+        spaceshipImage.startAnimation(hyperspaceJumpAnimation);
+        tipTextView.setText(msg);// 设置加载信息
 
-	public void dismissDialog() {
-		try {
-			if (mDialog != null && mDialog.isShowing()) {
-				mDialog.dismiss();
-			}
-		} catch (Exception e) {}
-	}
+        Dialog loadingDialog = new Dialog(context, R.style.loading_dialog);// 创建自定义样式dialog
 
-	public boolean isShowing(){
-		if (mDialog==null)
-			return false;
-		return mDialog.isShowing();
-	}
+        loadingDialog.setCancelable(cancelable);// 不可以用“返回键”取消
+        loadingDialog.setContentView(layout, new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT));// 设置布局
+        return loadingDialog;
+    }
+
+    public void dismissDialog() {
+        try {
+            if (mDialog != null && mDialog.isShowing()) {
+                mDialog.dismiss();
+            }
+        } catch (Exception e) {
+        }
+    }
+
+    public boolean isShowing() {
+        if (mDialog == null)
+            return false;
+        return mDialog.isShowing();
+    }
 }
