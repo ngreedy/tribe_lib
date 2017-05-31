@@ -27,16 +27,12 @@ public class LoadingDialog {
     }
 
     public void show(Context context, String message, boolean cancelable) {
-        if (mDialog == null) {
-            mDialog = createLoadingDialog(context, message, cancelable);
-        }
+        mDialog = createLoadingDialog(context, message, cancelable);
         mDialog.show();
     }
 
     public void show(Context context, int message, boolean cancelable) {
-        if (mDialog == null) {
-            mDialog = createLoadingDialog(context, context.getResources().getString(message), cancelable);
-        }
+        mDialog = createLoadingDialog(context, context.getResources().getString(message), cancelable);
         mDialog.show();
     }
 
@@ -69,6 +65,7 @@ public class LoadingDialog {
         try {
             if (mDialog != null && mDialog.isShowing()) {
                 mDialog.dismiss();
+                mDialog=null;
             }
         } catch (Exception e) {
         }
