@@ -27,13 +27,18 @@ public class LoadingDialog {
     }
 
     public void show(Context context, String message, boolean cancelable) {
-        mDialog = createLoadingDialog(context, message, cancelable);
-        mDialog.show();
+        if (mDialog==null){
+            mDialog = createLoadingDialog(context, message, cancelable);
+            mDialog.show();
+        }
+
     }
 
     public void show(Context context, int message, boolean cancelable) {
-        mDialog = createLoadingDialog(context, context.getResources().getString(message), cancelable);
-        mDialog.show();
+        if (mDialog==null){
+            mDialog = createLoadingDialog(context, context.getResources().getString(message), cancelable);
+            mDialog.show();
+        }
     }
 
     public Dialog createLoadingDialog(Context context, String msg, boolean cancelable) {
