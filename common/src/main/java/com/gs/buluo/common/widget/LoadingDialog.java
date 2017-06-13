@@ -30,6 +30,8 @@ public class LoadingDialog {
         if (mDialog==null){
             mDialog = createLoadingDialog(context, message, cancelable);
             mDialog.show();
+        }else if (!isShowing()){
+            mDialog.show();
         }
 
     }
@@ -37,6 +39,8 @@ public class LoadingDialog {
     public void show(Context context, int message, boolean cancelable) {
         if (mDialog==null){
             mDialog = createLoadingDialog(context, context.getResources().getString(message), cancelable);
+            mDialog.show();
+        }else if (!isShowing()){
             mDialog.show();
         }
     }
