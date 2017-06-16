@@ -650,7 +650,7 @@ public class WheelView extends View {
 	private void drawItems(Canvas canvas) {
 		canvas.save();
 
-		int top = (currentItem - firstItem) * getItemHeight() + (getItemHeight() - getHeight()) / 2;
+		int top = (currentItem - firstItem) * (getItemHeight()-5) + (getItemHeight() - getHeight()) / 2;
 		canvas.translate(PADDING, - top + scrollingOffset);
 
 		itemsLayout.draw(canvas);
