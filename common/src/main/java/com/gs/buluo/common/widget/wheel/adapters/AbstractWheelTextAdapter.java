@@ -24,6 +24,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.gs.buluo.common.utils.DensityUtils;
+
 
 /**
  * Abstract wheel adapter provides common functionality for adapters.
@@ -274,7 +276,9 @@ public abstract class AbstractWheelTextAdapter extends AbstractWheelAdapter {
         case NO_RESOURCE:
             return null;
         case TEXT_VIEW_ITEM_RESOURCE:
-            return new TextView(context);
+            TextView textView = new TextView(context);
+            textView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT , DensityUtils.dip2px(context,30)));
+            return textView;
         default:
             return inflater.inflate(resource, parent, false);    
         }
