@@ -512,7 +512,7 @@ public class WheelView extends View {
 	 */
 	private int getDesiredHeight(LinearLayout layout) {
 		if (layout != null && layout.getChildAt(0) != null) {
-			itemHeight = layout.getChildAt(0).getMeasuredHeight();
+			itemHeight = layout.getChildAt(0).getHeight();
 		}
 
 		int desired = itemHeight * visibleItems - itemHeight * ITEM_OFFSET_PERCENT / 50;
@@ -650,7 +650,7 @@ public class WheelView extends View {
 	private void drawItems(Canvas canvas) {
 		canvas.save();
 
-		int top = (currentItem - firstItem) * (getItemHeight()-5) + (getItemHeight() - getHeight()) / 2;
+		int top = (currentItem - firstItem) * (getItemHeight()) + (getItemHeight() - getHeight()) / 2;
 		canvas.translate(PADDING, - top + scrollingOffset);
 
 		itemsLayout.draw(canvas);
