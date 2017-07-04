@@ -2,8 +2,8 @@ package com.gs.buluo.common.network;
 
 
 import com.gs.buluo.common.BaseApplication;
-import com.gs.buluo.common.UpdateEvent;
 import com.gs.buluo.common.R;
+import com.gs.buluo.common.UpdateEvent;
 import com.gs.buluo.common.utils.ToastUtils;
 import com.gs.buluo.common.widget.LoadingDialog;
 
@@ -70,7 +70,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
     }
 
     public void onFail(ApiException e) {
-        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), "连接错误,错误码" + e.getCode());
+        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), e.getDisplayMessage());
     }
 
     @Override
