@@ -5,12 +5,22 @@ package com.gs.buluo.common.network;
  */
 
 public class ApiException extends RuntimeException {
-    private  int code;          //http 返回码
+    private int code;          //http 返回码
     private String displayMessage;
+    private String type;
 
-    public ApiException(int code, String message) {
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public ApiException(int code, String message, String type) {
         this.code = code;
         displayMessage = message;
+        this.type = type;
     }
 
     public void setCode(int code) {
@@ -20,9 +30,11 @@ public class ApiException extends RuntimeException {
     public int getCode() {
         return code;
     }
+
     public String getDisplayMessage() {
         return displayMessage;
     }
+
     public void setDisplayMessage(String msg) {
         this.displayMessage = msg + "(code:" + code + ")";
     }

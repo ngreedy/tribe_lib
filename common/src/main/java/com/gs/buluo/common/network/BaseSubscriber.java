@@ -48,29 +48,26 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
             if (((HttpException) e).code() == 401) {  //token 过期，重新登录
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.login_again);
                 EventBus.getDefault().post(new TokenEvent());
-            } else if (((HttpException) e).code() == 500) {
-                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
             } else {
-                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), "Http异常，返回码" + ((HttpException) e).code());
+                onFail(new ApiException(((HttpException) e).code(), "", "HttpException"));
             }
         } else if (e instanceof IOException) {
-            ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.convert_fail);
+            onFail(new ApiException(554, "", "IOException"));
         } else if (e instanceof ApiException) {
             ApiException exception = (ApiException) e;
-            if (exception.getCode() == 500) {
-                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.connect_fail);
-            } else if (exception.getCode() == 505) {//强制更新
+            exception.setType("ApiException)");
+            if (exception.getCode() == 505) {//强制更新
                 EventBus.getDefault().post(new UpdateEvent(false));
             } else {
                 onFail(exception);
             }
         } else {
-            ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), "未知错误,请稍后重试");
+            onFail(new ApiException(555, "未知错误,请稍后重试", "Exception"));
         }
     }
 
     public void onFail(ApiException e) {
-        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), e.getCode()+" : "+e.getDisplayMessage());
+        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(),e.getType()+" : "+ e.getCode() + " : " + e.getDisplayMessage());
     }
 
     @Override
