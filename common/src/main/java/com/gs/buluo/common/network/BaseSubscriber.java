@@ -70,7 +70,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
     }
 
     public void onFail(ApiException e) {
-        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), e.getDisplayMessage());
+        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), e.getCode()+" : "+e.getDisplayMessage());
     }
 
     @Override
