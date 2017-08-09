@@ -55,7 +55,6 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
             onFail(new ApiException(554, "", "IOException"));
         } else if (e instanceof ApiException) {
             ApiException exception = (ApiException) e;
-            exception.setType("ApiException)");
             if (exception.getCode() == 505) {//强制更新
                 EventBus.getDefault().post(new UpdateEvent(false));
             } else {
