@@ -1,6 +1,8 @@
 package com.gs.buluo.common.network;
 
 
+import android.util.Log;
+
 import com.gs.buluo.common.BaseApplication;
 import com.gs.buluo.common.R;
 import com.gs.buluo.common.UpdateEvent;
@@ -42,6 +44,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
 
     @Override
     public void onError(Throwable e) {
+        Log.e(TAG, "onError: "+e);
         LoadingDialog.getInstance().dismissDialog();
         if (e instanceof HttpException) {       //http返回异常
             //http error
