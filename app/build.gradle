@@ -2,19 +2,19 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
 
-    applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            def outPath  = output.outputFile.parent
-//            if ("true" .equals(IS_JENKINS)){
-                outPath = 'F:/Jenkins/workspace/tribal'
-//            }
-            output.outputFile = new File(
-                    outPath,
-                    "app.store-${variant.versionName}.apk".toLowerCase())
-        }
-    }
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outPath  = output.outputFile.parent
+////            if ("true" .equals(IS_JENKINS)){
+//                outPath = 'F:/Jenkins/workspace/tribal'
+////            }
+//            output.outputFile = new File(
+//                    outPath,
+//                    "app.store-${variant.versionName}.apk".toLowerCase())
+//        }
+//    }
 
     defaultConfig {
         applicationId "com.gs.buluo.tribalclib"
