@@ -1,8 +1,8 @@
 package com.gs.buluo.common.utils;
 
 import android.app.Activity;
-import android.content.Context;
 
+import java.util.Iterator;
 import java.util.Stack;
 
 /**
@@ -48,9 +48,13 @@ public class AppManager {
     }
 
     public void finishActivity(Class<?> cls) {
-        for (Activity activity : activityStack) {
-            if (activity.getClass().equals(cls)) {
-                finishActivity(activity);
+        Iterator<Activity> iterator = activityStack.iterator();
+        while (iterator.hasNext()){
+            Activity next = iterator.next();
+            if (next.getClass().equals(cls)){
+                iterator.remove();
+                next.finish();
+                next = null;
             }
         }
     }
