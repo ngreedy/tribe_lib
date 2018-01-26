@@ -13,14 +13,14 @@ import org.greenrobot.eventbus.EventBus;
 
 import java.io.IOException;
 
-import retrofit2.adapter.rxjava.HttpException;
-import rx.Subscriber;
+import io.reactivex.observers.ResourceObserver;
+import retrofit2.HttpException;
 
 /**
  * Created by hjn on 2017/3/20.
  */
 
-public abstract class BaseSubscriber<T> extends Subscriber<T> {
+public abstract class BaseSubscriber<T> extends ResourceObserver<T> {
     private static final String TAG = "Network";
     private boolean showLoading = true;
 
@@ -37,23 +37,23 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
     }
 
     @Override
-    public void onCompleted() {
+    public void onComplete() {
         LoadingDialog.getInstance().dismissDialog();
     }
 
 
     @Override
     public void onError(Throwable e) {
-        Log.e(TAG, "onError: "+e);
+        Log.e(TAG, "onError: " + e);
         LoadingDialog.getInstance().dismissDialog();
         if (e instanceof HttpException) {       //http返回异常
             //http error
-            if (((HttpException) e).code() == 401) {  //token 过期，重新登录
-                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.login_again);
-                EventBus.getDefault().post(new TokenEvent());
-            } else {
+//            if (((HttpException) e).code() == 401) {  //token 过期，重新登录
+//                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.login_again);
+//                EventBus.getDefault().post(new TokenEvent());
+//            } else {
                 onFail(new ApiException(((HttpException) e).code(), "", "HttpException"));
-            }
+//            }
         } else if (e instanceof IOException) {
             onFail(new ApiException(554, "", "IOException"));
         } else if (e instanceof ApiException) {
@@ -64,12 +64,12 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
                 onFail(exception);
             }
         } else {
-            onFail(new ApiException(555, "未知错误,请稍后重试", "Exception"));
+            onFail(new ApiException(509, "未知错误,请稍后重试", "Exception"));
         }
     }
 
     public void onFail(ApiException e) {
-        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(),e.getType()+" : "+ e.getCode() + " : " + e.getDisplayMessage());
+        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), e.getType() + " : " + e.getCode() + " : " + e.getDisplayMessage());
     }
 
     @Override
