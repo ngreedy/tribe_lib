@@ -136,10 +136,10 @@ public class TribeCrashCollector implements Thread.UncaughtExceptionHandler {
             crashContext.put("ui", Build.HOST);
             // net status
             try {
-                if (CommonUtils.isConnected(mContext)) {
-                    if (CommonUtils.isConnectedMobile(mContext)) {
+                if (Utils.isConnected(mContext)) {
+                    if (Utils.isConnectedMobile(mContext)) {
                         crashContext.put("net", "mobile");
-                    } else if (CommonUtils.isConnectedWifi(mContext)) {
+                    } else if (Utils.isConnectedWifi(mContext)) {
                         crashContext.put("net", "wifi");
                     }
                 }
