@@ -43,7 +43,7 @@ import java.util.regex.Pattern;
 /**
  * Created by hjn on 2016/11/10.
  */
-public class CommonUtils {
+public class Utils {
     public static boolean checkPhone(String area, String phone, Context context) {
         if (TextUtils.isEmpty(phone)) {
             ToastUtils.ToastMessage(context, "手机号不能为空!");

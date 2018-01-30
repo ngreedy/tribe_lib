@@ -6,8 +6,9 @@
       <module fileurl="file://E:\tribe_lib\app\app.iml" filepath="E:\tribe_lib\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://E:\tribe_lib\common\common.iml" filepath="E:\tribe_lib\common\common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tribe_lib.iml" filepath="$PROJECT_DIR$/tribe_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tribe_lib.iml" filepath="$PROJECT_DIR$/.idea/tribe_lib.iml" />
       <module fileurl="file://E:\tribe_lib\tribe_lib.iml" filepath="E:\tribe_lib\tribe_lib.iml" />
+      <module fileurl="file://D:\Android Project\tribe_lib\tribe_lib.iml" filepath="D:\Android Project\tribe_lib\tribe_lib.iml" />
     </modules>
   </component>
 </project>

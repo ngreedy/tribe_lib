@@ -36,6 +36,6 @@ public class ApiException extends RuntimeException {
     }
 
     public void setDisplayMessage(String msg) {
-        this.displayMessage = msg + "(code:" + code + ")";
+        this.displayMessage = msg + "(err_code:" + code + ")";
     }
 }
