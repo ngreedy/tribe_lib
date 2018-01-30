@@ -65,7 +65,7 @@ public abstract class BaseSubscriber<T> extends ResourceSubscriber<T> {
         ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), e.getType() + " : " + e.getCode() + " : " + e.getDisplayMessage());
     }
 
-    abstract void onSuccess(T t);
+    public abstract void onSuccess(T t);
 
     @Override
     public void onNext(T t) {
