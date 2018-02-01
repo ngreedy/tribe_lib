@@ -24,9 +24,8 @@ public class HttpInterceptor implements Interceptor {
         HttpUrl url = req.url();
         String query = url.encodedQuery();
         if (!TextUtils.isEmpty(query)) {
-            String sign = Base64.encodeToString(query.getBytes(), Base64.DEFAULT);
             HttpUrl.Builder newBuilder = url.newBuilder();
-            newBuilder.addQueryParameter("sign", EncryptUtil.getSha1(sign).toUpperCase());
+            newBuilder.addQueryParameter("sign", EncryptUtil.getSha1(Base64.encode(query.getBytes(), Base64.NO_WRAP)).toUpperCase());
             url = newBuilder.build();
         }
 //            builder.addHeader("Authorization", CarefreeApplication.getInstance().getUserInfo().getToken());

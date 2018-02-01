@@ -9,15 +9,15 @@ import java.security.NoSuchAlgorithmException;
  */
 
 public class EncryptUtil {
-    public static String getSha1(String str){
-        if (null == str || 0 == str.length()){
-            return null;
+    public static String getSha1(byte[] str) {
+        if (0 == str.length) {
+            return "";
         }
-        char[] hexDigits = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        char[] hexDigits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
                 'a', 'b', 'c', 'd', 'e', 'f'};
         try {
             MessageDigest mdTemp = MessageDigest.getInstance("SHA1");
-            mdTemp.update(str.getBytes("UTF-8"));
+            mdTemp.update(str);
 
             byte[] md = mdTemp.digest();
             int j = md.length;
@@ -31,8 +31,6 @@ public class EncryptUtil {
             return new String(buf);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
         }
         return "";
     }
@@ -41,8 +39,8 @@ public class EncryptUtil {
     /*
     *  ascii 编码顺序
     * */
-    public static boolean isMoreThan(String pre, String next){
-        if(null == pre || null == next || "".equals(pre) || "".equals(next)){
+    public static boolean isMoreThan(String pre, String next) {
+        if (null == pre || null == next || "".equals(pre) || "".equals(next)) {
             return false;
         }
 
@@ -52,13 +50,13 @@ public class EncryptUtil {
         int minSize = Math.min(c_pre.length, c_next.length);
 
         for (int i = 0; i < minSize; i++) {
-            if((int)c_pre[i] > (int)c_next[i]){
+            if ((int) c_pre[i] > (int) c_next[i]) {
                 return true;
-            }else if((int)c_pre[i] < (int)c_next[i]){
+            } else if ((int) c_pre[i] < (int) c_next[i]) {
                 return false;
             }
         }
-        if(c_pre.length > c_next.length){
+        if (c_pre.length > c_next.length) {
             return true;
         }
 
