@@ -5,35 +5,32 @@ import android.util.Log;
 
 import com.google.gson.JsonParseException;
 import com.gs.buluo.common.BaseApplication;
-import com.gs.buluo.common.R;
-import com.gs.buluo.common.UpdateEvent;
 import com.gs.buluo.common.utils.ToastUtils;
 import com.gs.buluo.common.widget.LoadingDialog;
 
-import org.greenrobot.eventbus.EventBus;
 import org.json.JSONException;
 
 import java.io.IOException;
 
-import io.reactivex.observers.ResourceObserver;
-import io.reactivex.subscribers.ResourceSubscriber;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 import retrofit2.HttpException;
 
 /**
  * Created by hjn on 2017/3/20.
  */
 
-public abstract class BaseSubscriber<T> extends ResourceSubscriber<T> {
+public abstract class BaseSubscriber<T> implements Observer<T> {
     private static final String TAG = "Network";
 
     @Override
-    public void onStart() {
+    public void onSubscribe(Disposable d) {
 
     }
 
     @Override
     public void onComplete() {
-        LoadingDialog.getInstance().dismissDialog();
+
     }
 
 

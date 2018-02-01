@@ -1,5 +1,7 @@
 package com.gs.buluo.common.network;
 
+import android.util.Base64;
+
 /**
  * Created by hjn91 on 2018/1/30.
  */
@@ -24,8 +26,19 @@ public class QueryMapBuilder {
         return builder;
     }
 
-    public SortedTreeMap<String, String> build() {
-        sortedMap.put("timestamp",System.currentTimeMillis() + "");
+    public SortedTreeMap<String, String> buildGet() {
+        sortedMap.put("timestamp", System.currentTimeMillis() + "");
+        return sortedMap;
+    }
+
+    public SortedTreeMap<String, String> buildPost() {
+        sortedMap.put("timestamp", System.currentTimeMillis() + "");
+        StringBuilder sb = new StringBuilder();
+        for (String key : sortedMap.keySet()) {
+            sb.append(key).append("=").append(sortedMap.get(key)).append("&");
+        }
+        String sign = EncryptUtil.getSha1(Base64.encode(sb.substring(0, sb.length() - 1).getBytes(), Base64.NO_WRAP)).toUpperCase();
+        sortedMap.put("sign", sign);
         return sortedMap;
     }
 }
