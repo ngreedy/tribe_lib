@@ -1,4 +1,7 @@
 <resources>
     <dimen name="drawable_size">76dp</dimen>
     <dimen name="info_margin_top">-56dp</dimen>
+    <dimen name="dimens_18sp">18sp</dimen>
+    <dimen name="dimens_27sp">27sp</dimen>
+    <dimen name="captcha_space">6dp</dimen>
 </resources>
