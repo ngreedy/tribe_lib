@@ -27,12 +27,12 @@ public class QueryMapBuilder {
     }
 
     public SortedTreeMap<String, String> buildGet() {
-        sortedMap.put("timestamp", System.currentTimeMillis() + "");
+        sortedMap.put("timestamp", System.currentTimeMillis()/1000 + "");
         return sortedMap;
     }
 
     public SortedTreeMap<String, String> buildPost() {
-        sortedMap.put("timestamp", System.currentTimeMillis() + "");
+        sortedMap.put("timestamp", System.currentTimeMillis()/1000 + "");
         StringBuilder sb = new StringBuilder();
         for (String key : sortedMap.keySet()) {
             sb.append(key).append("=").append(sortedMap.get(key)).append("&");
