@@ -37,7 +37,9 @@ public class StatusLayout extends FrameLayout {
     private View progressContentView;
 
     private TextView emptyTextView;
+    private TextView emptyActView;
     private TextView errorTextView;
+    private TextView errorActView;
     private TextView progressTextView;
 
     private ImageView errorImageView;
@@ -45,20 +47,21 @@ public class StatusLayout extends FrameLayout {
     private ProgressBar progressBar;
 
     private View currentShowingView;
+
     public StatusLayout(@NonNull Context context) {
-        this(context,null);
+        this(context, null);
     }
 
     public StatusLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
-        this(context, attrs,0);
+        this(context, attrs, 0);
     }
 
     public StatusLayout(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context,attrs);
+        init(context, attrs);
     }
 
-    private void init(Context context,  AttributeSet attrs) {
+    private void init(Context context, AttributeSet attrs) {
         parseAttrs(context, attrs);
 
         emptyView.setVisibility(View.GONE);
@@ -99,6 +102,7 @@ public class StatusLayout extends FrameLayout {
         errorView = inflater.inflate(R.layout.status_view_error, this, false);
         errorContentView = errorView.findViewById(R.id.error_content);
         errorTextView = (TextView) errorView.findViewById(R.id.errorTextView);
+        errorActView = (TextView) errorView.findViewById(R.id.error_click_view);
         errorImageView = (ImageView) errorView.findViewById(R.id.errorImageView);
         if (errorDrawable != null) {
             errorImageView.setImageDrawable(errorDrawable);
@@ -110,6 +114,7 @@ public class StatusLayout extends FrameLayout {
         emptyContentView = emptyView.findViewById(R.id.empty_content);
         emptyTextView = (TextView) emptyView.findViewById(R.id.emptyTextView);
         emptyImageView = (ImageView) emptyView.findViewById(R.id.emptyImageView);
+        emptyActView = (TextView) emptyView.findViewById(R.id.empty_click_view);
         if (emptyDrawable != null) {
             emptyImageView.setImageDrawable(emptyDrawable);
         }
@@ -289,6 +294,23 @@ public class StatusLayout extends FrameLayout {
         findViewById(R.id.empty_click_view).setVisibility(VISIBLE);
         errorView.setOnClickListener(errorAndEmptyAction);
         emptyView.setOnClickListener(errorAndEmptyAction);
+    }
+
+
+    public void setErrorActionBackgroud(int resId) {
+        errorActView.setBackgroundResource(resId);
+    }
+
+    public void setEmptyActionBackground(int resId) {
+        emptyActView.setBackgroundResource(resId);
+    }
+
+    public TextView getEmptyActView() {
+        return emptyActView;
+    }
+
+    public TextView getErrorActView() {
+        return errorActView;
     }
 
     protected void onHideContentView() {
