@@ -78,6 +78,8 @@ public class StatusLayout extends FrameLayout {
 
         progressView.setVisibility(View.GONE);
 
+        loginView.setVisibility(View.GONE);
+
         currentShowingView = contentView;
     }
 
