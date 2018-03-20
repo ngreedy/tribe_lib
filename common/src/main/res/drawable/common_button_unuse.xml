@@ -3,7 +3,7 @@
     <solid android:color="@color/login_unuse" />
 
     <corners
-        android:radius= "3dp" />
+        android:radius= "6dp" />
 
     <padding
         android:bottom="1dp"

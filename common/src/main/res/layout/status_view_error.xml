@@ -33,5 +33,5 @@
         android:textColor="@color/white"
         android:gravity="center"
         android:visibility="gone"
-        android:background="@drawable/button_selector"/>
+        android:background="@drawable/common_button_selector"/>
 </LinearLayout>
