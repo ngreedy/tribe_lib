@@ -22,4 +22,7 @@
 
     <color name="translucent_background">#90000000</color>
     <color name="night_blue">#627db9</color>
+    <color name="login_normal">#627db9</color>
+    <color name="login_unuse">#30627db9</color>
+    <color name="login_press">#445781</color>
 </resources>
