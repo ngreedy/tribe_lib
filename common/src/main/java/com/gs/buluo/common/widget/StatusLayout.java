@@ -144,7 +144,7 @@ public class StatusLayout extends FrameLayout {
     }
 
     private void checkIsContentView(View view) {
-        if (contentView == null && view != errorView && view != progressView && view != emptyView) {
+        if (contentView == null && view != errorView && view != progressView && view != emptyView && view != loginView) {
             contentView = view;
             currentShowingView = contentView;
         }
