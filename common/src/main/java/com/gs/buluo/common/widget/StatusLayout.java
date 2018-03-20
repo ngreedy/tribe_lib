@@ -33,6 +33,10 @@ public class StatusLayout extends FrameLayout {
     private View errorView;
     private View errorContentView;
 
+    private View loginView;
+    private View loginContentView;
+
+
     private View progressView;
     private View progressContentView;
 
@@ -40,11 +44,15 @@ public class StatusLayout extends FrameLayout {
     private TextView emptyActView;
     private TextView errorTextView;
     private TextView errorActView;
+    private TextView loginTextView;
+    private TextView loginActView;
     private TextView progressTextView;
 
     private ImageView errorImageView;
     private ImageView emptyImageView;
+    private ImageView loginImageView;
     private ProgressBar progressBar;
+
 
     private View currentShowingView;
 
@@ -80,9 +88,11 @@ public class StatusLayout extends FrameLayout {
         int progressViewId;
         Drawable errorDrawable;
         Drawable emptyDrawable;
+        Drawable loginDrawable;
         try {
             errorDrawable = a.getDrawable(R.styleable.StateLayout_errorDrawable);
             emptyDrawable = a.getDrawable(R.styleable.StateLayout_emptyDrawable);
+            loginDrawable = a.getDrawable(R.styleable.StateLayout_loginDrawable);
             progressViewId = a.getResourceId(R.styleable.StateLayout_progressView, -1);
         } finally {
             a.recycle();
@@ -120,6 +130,15 @@ public class StatusLayout extends FrameLayout {
         }
         addView(emptyView);
 
+        loginView = inflater.inflate(R.layout.status_view_login, this, false);
+        loginContentView = loginView.findViewById(R.id.login_content);
+        loginTextView = (TextView) loginView.findViewById(R.id.loginTextView);
+        loginImageView = (ImageView) loginView.findViewById(R.id.loginImageView);
+        loginActView = (TextView) loginView.findViewById(R.id.login_click_view);
+        if (loginDrawable != null) {
+            loginImageView.setImageDrawable(loginDrawable);
+        }
+        addView(loginView);
     }
 
     private void checkIsContentView(View view) {
@@ -225,6 +244,10 @@ public class StatusLayout extends FrameLayout {
         ((LinearLayout.LayoutParams) emptyImageView.getLayoutParams()).setMargins(left, top, right, bottom);
     }
 
+    public void setLoginContentViewMargin(int left, int top, int right, int bottom) {
+        ((LinearLayout.LayoutParams) loginImageView.getLayoutParams()).setMargins(left, top, right, bottom);
+    }
+
     public void setErrorContentViewMargin(int left, int top, int right, int bottom) {
         ((LinearLayout.LayoutParams) errorImageView.getLayoutParams()).setMargins(left, top, right, bottom);
     }
@@ -239,7 +262,6 @@ public class StatusLayout extends FrameLayout {
         setErrorContentViewMargin(left, top, right, bottom);
         setProgressContentViewMargin(left, top, right, bottom);
     }
-
 
     public void showContentView() {
         switchWithAnimation(contentView);
@@ -267,6 +289,18 @@ public class StatusLayout extends FrameLayout {
         switchWithAnimation(errorView);
     }
 
+    public void showLoginView(String msg) {
+        onHideContentView();
+        if (msg != null)
+            loginTextView.setText(msg);
+        switchWithAnimation(loginView);
+    }
+
+    public void showLoginView() {
+        showLoginView(null);
+    }
+
+
     public void showProgressView() {
         showProgressView(null);
     }
@@ -276,6 +310,12 @@ public class StatusLayout extends FrameLayout {
         if (msg != null)
             progressTextView.setText(msg);
         switchWithAnimation(progressView);
+    }
+
+
+    public void setLoginAction(final OnClickListener onLoginButtonClickListener) {
+        findViewById(R.id.login_click_view).setVisibility(VISIBLE);
+        loginView.setOnClickListener(onLoginButtonClickListener);
     }
 
     public void setErrorAction(final OnClickListener onErrorButtonClickListener) {
@@ -311,6 +351,10 @@ public class StatusLayout extends FrameLayout {
 
     public TextView getErrorActView() {
         return errorActView;
+    }
+
+    public TextView getLoginActView() {
+        return loginActView;
     }
 
     protected void onHideContentView() {
