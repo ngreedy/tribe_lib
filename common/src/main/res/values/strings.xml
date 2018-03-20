@@ -13,5 +13,5 @@
     <string name="not_found">信息丢失</string>
     <string name="can_not_connect">数据在天上飞，暂时无法获取</string>
     <string name="retry">重新加载</string>
-    <string name="status_text_empty">啥也没有呢</string>
+    <string name="status_text_empty">当前列表无数据</string>
 </resources>
