@@ -4,6 +4,7 @@ import android.text.TextUtils;
 import android.util.Base64;
 
 import java.lang.reflect.Field;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -82,7 +83,7 @@ public class QueryMapBuilder {
         sortedMap.put("timestamp", System.currentTimeMillis() / 1000 + "");
         StringBuilder sb = new StringBuilder();
         for (String key : sortedMap.keySet()) {
-            sb.append(key).append("=").append(sortedMap.get(key)).append("&");
+            sb.append(key).append("=").append(URLEncoder.encode(sortedMap.get(key))).append("&");
         }
         String sign = EncryptUtil.getSha1(Base64.encode(sb.substring(0, sb.length() - 1).getBytes(), Base64.NO_WRAP)).toUpperCase();
         sortedMap.put("sign", sign);
