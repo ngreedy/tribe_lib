@@ -322,12 +322,12 @@ public class StatusLayout extends FrameLayout {
 
     public void setErrorAction(final OnClickListener onErrorButtonClickListener) {
         findViewById(R.id.error_click_view).setVisibility(VISIBLE);
-        errorImageView.setOnClickListener(onErrorButtonClickListener);
+        errorView.setOnClickListener(onErrorButtonClickListener);
     }
 
     public void setEmptyAction(final OnClickListener onEmptyButtonClickListener) {
         findViewById(R.id.empty_click_view).setVisibility(VISIBLE);
-        emptyActView.setOnClickListener(onEmptyButtonClickListener);
+        emptyView.setOnClickListener(onEmptyButtonClickListener);
     }
 
 
