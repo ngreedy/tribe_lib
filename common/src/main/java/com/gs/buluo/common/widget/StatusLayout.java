@@ -317,17 +317,20 @@ public class StatusLayout extends FrameLayout {
 
     public void setLoginAction(final OnClickListener onLoginButtonClickListener) {
         findViewById(R.id.login_click_view).setVisibility(VISIBLE);
+        loginView.setOnClickListener(onLoginButtonClickListener);
         loginActView.setOnClickListener(onLoginButtonClickListener);
     }
 
     public void setErrorAction(final OnClickListener onErrorButtonClickListener) {
         findViewById(R.id.error_click_view).setVisibility(VISIBLE);
         errorView.setOnClickListener(onErrorButtonClickListener);
+        errorActView.setOnClickListener(onErrorButtonClickListener);
     }
 
     public void setEmptyAction(final OnClickListener onEmptyButtonClickListener) {
         findViewById(R.id.empty_click_view).setVisibility(VISIBLE);
         emptyView.setOnClickListener(onEmptyButtonClickListener);
+        emptyActView.setOnClickListener(onEmptyButtonClickListener);
     }
 
 
@@ -336,6 +339,8 @@ public class StatusLayout extends FrameLayout {
         findViewById(R.id.empty_click_view).setVisibility(VISIBLE);
         errorView.setOnClickListener(errorAndEmptyAction);
         emptyView.setOnClickListener(errorAndEmptyAction);
+        emptyActView.setOnClickListener(errorAndEmptyAction);
+        errorActView.setOnClickListener(errorAndEmptyAction);
     }
 
 
