@@ -2,6 +2,7 @@ package com.gs.buluo.common.utils;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.text.TextUtils;
 import android.widget.Toast;
 
 public class ToastUtils {
@@ -10,7 +11,9 @@ public class ToastUtils {
      * @param msg
      */
     static Toast toast1 = null;
+
     public static void ToastMessage(Context cont, String msg) {
+        if (TextUtils.isEmpty(msg)) return;
         try {
             if (toast1 == null) {
                 //			toast1 = Toast.makeText(cont, msg, Toast.LENGTH_LONG);
@@ -23,7 +26,9 @@ public class ToastUtils {
             e.printStackTrace();
         }
     }
+
     static Toast toast = null;
+
     public static void ToastMessage(Context cont, int msg) {
         try {
             if (toast == null) {
@@ -36,6 +41,7 @@ public class ToastUtils {
             e.printStackTrace();
         }
     }
+
     public static void ToastMessage(Context cont, int msg, int time) {
         try {
             Toast.makeText(cont, msg, time).show();
@@ -45,6 +51,7 @@ public class ToastUtils {
     }
 
     public static void ToastMessage(Context cont, String msg, int time) {
+        if (TextUtils.isEmpty(msg)) return;
         try {
             Toast.makeText(cont, msg, time).show();
         } catch (Exception e) {
