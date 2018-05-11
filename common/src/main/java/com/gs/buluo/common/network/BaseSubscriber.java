@@ -60,7 +60,7 @@ public abstract class BaseSubscriber<T> implements Observer<T> {
     }
 
     protected void onFail(ApiException e) {
-        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), e.getType() + " : " + e.getCode() + " : " + e.getDisplayMessage());
+        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), e.getDisplayMessage());
     }
 
     public abstract void onSuccess(T t);
