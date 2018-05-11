@@ -43,7 +43,7 @@ public abstract class BaseSubscriber<T> implements Observer<T> {
         if (e instanceof HttpException) {       //http返回异常
             onFail(new ApiException(((HttpException) e).code(), "出现HttpException异常", "HttpException"));
         } else if (e instanceof IOException) {
-            onFail(new ApiException(554, "出现IOException异常", "IOException"));
+            onFail(new ApiException(554, "当前网络状况不佳", "IOException"));
         } else if (e instanceof JSONException || e instanceof JsonParseException) {
             onFail(new ApiException(554, "数据解析异常", "JSONException"));
         } else if (e instanceof ApiException) {
