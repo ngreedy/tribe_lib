@@ -67,7 +67,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="@string/ok"
-                android:textColor="@color/custom_color"/>
+                android:textColor="@color/common_custom_color"/>
 
             <View
                 android:id="@+id/vertical_line"

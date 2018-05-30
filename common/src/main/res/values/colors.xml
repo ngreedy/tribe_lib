@@ -3,26 +3,26 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="titlebar_background">#1E1E1E</color>
+    <color name="common_titlebar_background">#1E1E1E</color>
     <color name="black">#000000</color>
     <color name="mask">#60000000</color>
     <color name="white">#ffffff</color>
     <color name="red">#ff0000</color>
 
-    <color name="divide_gray">#dddddd</color>
-    <color name="tint_bg">#f2f2f2</color>
-    <color name="custom_color">#51c7d1</color>
-    <color name="main_tab">#707070</color>
-    <color name="common_gray">#9a9a9a</color>
-    <color name="shallow_gray">#bababa</color>
-    <color name="common_dark">#2a2a2a</color>
-    <color name="custom_color_shallow">#80d0dc</color>
+    <color name="common_divide_gray">#dddddd</color>
+    <color name="common_tint_bg">#f2f2f2</color>
+    <color name="common_custom_color">#51c7d1</color>
+    <color name="common_main_tab">#707070</color>
+    <color name="common_common_gray">#9a9a9a</color>
+    <color name="common_shallow_gray">#bababa</color>
+    <color name="common_common_dark">#2a2a2a</color>
+    <color name="common_custom_color_shallow">#80d0dc</color>
     <color name="transparent">#00000000</color>
-    <color name="custom_bg">#e2eefc</color>
+    <color name="common_custom_bg">#e2eefc</color>
 
-    <color name="translucent_background">#90000000</color>
-    <color name="night_blue">#627db9</color>
-    <color name="login_normal">#627db9</color>
-    <color name="login_unuse">#30627db9</color>
-    <color name="login_press">#445781</color>
+    <color name="common_translucent_background">#90000000</color>
+    <color name="common_night_blue">#627db9</color>
+    <color name="common_login_normal">#627db9</color>
+    <color name="common_login_unuse">#30627db9</color>
+    <color name="common_login_press">#445781</color>
 </resources>

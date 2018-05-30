@@ -130,6 +130,8 @@ public class StatusLayout extends FrameLayout {
         if (emptyDrawable != null) {
             emptyImageView.setImageDrawable(emptyDrawable);
         }
+
+
         addView(emptyView);
 
         loginView = inflater.inflate(R.layout.status_view_login, this, false);

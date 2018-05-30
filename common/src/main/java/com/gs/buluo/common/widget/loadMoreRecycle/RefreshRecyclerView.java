@@ -43,7 +43,7 @@ public class RefreshRecyclerView extends FrameLayout {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.my_swipe);
         mSwipeRefreshLayout.setEnabled(false);
-        setSwipeRefreshColorsFromRes(R.color.main_tab,R.color.custom_color,R.color.custom_color_shallow);
+        setSwipeRefreshColorsFromRes(R.color.common_main_tab,R.color.common_custom_color,R.color.common_custom_color_shallow);
 //        mRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener(){
 //            @Override
 //            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {

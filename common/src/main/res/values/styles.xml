@@ -59,7 +59,7 @@
     <style name="Property_text_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/common_gray</item>
+        <item name="android:textColor">@color/common_common_gray</item>
     </style>
 
     <style name="Dialog" parent="android:style/Theme.Dialog">

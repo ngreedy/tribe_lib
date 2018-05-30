@@ -5,7 +5,6 @@ import android.util.Log;
 
 import com.google.gson.JsonParseException;
 import com.gs.buluo.common.BaseApplication;
-import com.gs.buluo.common.R;
 import com.gs.buluo.common.utils.ToastUtils;
 import com.gs.buluo.common.widget.LoadingDialog;
 
@@ -48,8 +47,8 @@ public abstract class BaseSubscriber<T> implements Observer<T> {
             onFail(new ApiException(554, "数据解析异常", "JSONException"));
         } else if (e instanceof ApiException) {
             ApiException exception = (ApiException) e;
-            if (exception.getCode() == 901) {
-                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), R.string.common_token_expired);
+            if (exception.getCode() == 1002) {
+                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), exception.getDisplayMessage());
                 EventBus.getDefault().post(new TokenEvent());
             } else {
                 onFail(exception);
