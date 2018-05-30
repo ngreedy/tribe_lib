@@ -40,7 +40,7 @@ public abstract class BaseSubscriber<T> implements Observer<T> {
         Log.e(TAG, "onError: " + e);
         LoadingDialog.getInstance().dismissDialog();
         if (e instanceof HttpException) {       //http返回异常
-            onFail(new ApiException(((HttpException) e).code(), "出现HttpException异常", "HttpException"));
+            onFail(new ApiException(((HttpException) e).code(), "服务器无法连接，请稍后重试", "HttpException"));
         } else if (e instanceof IOException) {
             onFail(new ApiException(554, "当前网络状况不佳", "IOException"));
         } else if (e instanceof JSONException || e instanceof JsonParseException) {
