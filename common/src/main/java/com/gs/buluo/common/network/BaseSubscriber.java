@@ -47,7 +47,7 @@ public abstract class BaseSubscriber<T> implements Observer<T> {
             onFail(new ApiException(554, "数据解析异常", "JSONException"));
         } else if (e instanceof ApiException) {
             ApiException exception = (ApiException) e;
-            if (exception.getCode() == 1002) {
+            if (exception.getCode() == 10003 || exception.getCode()== 10011) {
                 ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), exception.getDisplayMessage());
                 EventBus.getDefault().post(new TokenEvent());
             } else {
