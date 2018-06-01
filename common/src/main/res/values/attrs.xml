@@ -6,4 +6,9 @@
         <attr name="loginDrawable" format="reference" />
         <attr name="progressView" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="NewRefreshRecyclerView">
+        <attr name="refreshErrorDrawable" format="reference" />
+        <attr name="refreshEmptyDrawable" format="reference" />
+    </declare-styleable>
 </resources>
