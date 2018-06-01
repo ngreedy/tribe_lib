@@ -20,17 +20,17 @@ import com.gs.buluo.common.widget.StatusLayout;
  * Created by hjn on 2017/7/10.
  */
 
-public class NewRefreshRecyclerView extends FrameLayout {
+public class RefreshRecyclerView extends FrameLayout {
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
     private BaseQuickAdapter mAdapter;
     private StatusLayout statusLayout;
 
-    public NewRefreshRecyclerView(Context context) {
+    public RefreshRecyclerView(Context context) {
         this(context, null);
     }
 
-    public NewRefreshRecyclerView(Context context, @Nullable AttributeSet attrs) {
+    public RefreshRecyclerView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
         init(context, attrs);
     }
@@ -40,8 +40,8 @@ public class NewRefreshRecyclerView extends FrameLayout {
         Drawable errorDrawable;
         Drawable emptyDrawable;
         try {
-            errorDrawable = a.getDrawable(R.styleable.NewRefreshRecyclerView_refreshErrorDrawable);
-            emptyDrawable = a.getDrawable(R.styleable.NewRefreshRecyclerView_refreshEmptyDrawable);
+            errorDrawable = a.getDrawable(R.styleable.RefreshRecyclerView_refreshErrorDrawable);
+            emptyDrawable = a.getDrawable(R.styleable.RefreshRecyclerView_refreshEmptyDrawable);
         } finally {
             a.recycle();
         }
@@ -49,7 +49,7 @@ public class NewRefreshRecyclerView extends FrameLayout {
         statusLayout.getErrorImageView().setImageDrawable(errorDrawable);
     }
 
-    public NewRefreshRecyclerView(Context context, @Nullable AttributeSet attrs, int defStyle) {
+    public RefreshRecyclerView(Context context, @Nullable AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         View view = inflate(context, R.layout.common_status_refresh_recycler, this);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
