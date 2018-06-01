@@ -96,6 +96,10 @@ public class RefreshRecyclerView extends FrameLayout {
         mAdapter.clearData();
     }
 
+    public SwipeRefreshLayout getRefreshLayout() {
+        return mSwipeRefreshLayout;
+    }
+
     public void showEmptyView() {
         statusLayout.showEmptyView();
     }
