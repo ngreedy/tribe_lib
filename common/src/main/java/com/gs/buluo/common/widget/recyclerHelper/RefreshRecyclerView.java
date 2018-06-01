@@ -43,7 +43,7 @@ public class RefreshRecyclerView extends FrameLayout {
         try {
             errorDrawable = a.getDrawable(R.styleable.RefreshRecyclerView_refreshErrorDrawable);
             emptyDrawable = a.getDrawable(R.styleable.RefreshRecyclerView_refreshEmptyDrawable);
-            loginDrawable = a.getDrawable(R.styleable.RefreshRecyclerView_refreshEmptyDrawable);
+            loginDrawable = a.getDrawable(R.styleable.RefreshRecyclerView_refreshLoginDrawable);
         } finally {
             a.recycle();
         }
