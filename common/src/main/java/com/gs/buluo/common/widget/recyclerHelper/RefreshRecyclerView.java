@@ -39,14 +39,17 @@ public class RefreshRecyclerView extends FrameLayout {
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.StateLayout, 0, 0);
         Drawable errorDrawable;
         Drawable emptyDrawable;
+        Drawable loginDrawable;
         try {
             errorDrawable = a.getDrawable(R.styleable.RefreshRecyclerView_refreshErrorDrawable);
             emptyDrawable = a.getDrawable(R.styleable.RefreshRecyclerView_refreshEmptyDrawable);
+            loginDrawable = a.getDrawable(R.styleable.RefreshRecyclerView_refreshEmptyDrawable);
         } finally {
             a.recycle();
         }
         statusLayout.getEmptyImageView().setImageDrawable(emptyDrawable);
         statusLayout.getErrorImageView().setImageDrawable(errorDrawable);
+        statusLayout.getLoginImageView().setImageDrawable(loginDrawable);
     }
 
     public RefreshRecyclerView(Context context, @Nullable AttributeSet attrs, int defStyle) {

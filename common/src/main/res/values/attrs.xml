@@ -10,5 +10,6 @@
     <declare-styleable name="RefreshRecyclerView">
         <attr name="refreshErrorDrawable" format="reference" />
         <attr name="refreshEmptyDrawable" format="reference" />
+        <attr name="loginDrawable" format="reference" />
     </declare-styleable>
 </resources>

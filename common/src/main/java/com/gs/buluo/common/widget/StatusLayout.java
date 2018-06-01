@@ -156,6 +156,9 @@ public class StatusLayout extends FrameLayout {
         return errorImageView;
     }
 
+    public ImageView getLoginImageView() {
+        return loginImageView;
+    }
     public ImageView getEmptyImageView() {
         return emptyImageView;
     }
