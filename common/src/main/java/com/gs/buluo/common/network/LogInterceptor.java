@@ -54,7 +54,6 @@ public class LogInterceptor implements okhttp3.Interceptor {
         if (null == src) {
             return null;
         }
-        System.out.println("src: " + src);
         StringBuilder out = new StringBuilder();
         for (int i = 0; i < src.length(); ) {
             char c = src.charAt(i);
