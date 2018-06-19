@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.google.gson.JsonParseException;
 import com.gs.buluo.common.BaseApplication;
+import com.gs.buluo.common.R;
 import com.gs.buluo.common.utils.ToastUtils;
 import com.gs.buluo.common.widget.LoadingDialog;
 
@@ -40,11 +41,11 @@ public abstract class BaseSubscriber<T> implements Observer<T> {
         Log.e(TAG, "onError: " + e);
         LoadingDialog.getInstance().dismissDialog();
         if (e instanceof HttpException) {       //http返回异常
-            onFail(new ApiException(((HttpException) e).code(), "服务器无法连接，请稍后重试", "HttpException"));
+            onFail(new ApiException(((HttpException) e).code(), BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.connect_fail), "HttpException"));
         } else if (e instanceof IOException) {
-            onFail(new ApiException(554, "当前网络状况不佳", "IOException"));
+            onFail(new ApiException(554, BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.connect_fail), "IOException"));
         } else if (e instanceof JSONException || e instanceof JsonParseException) {
-            onFail(new ApiException(554, "数据解析异常", "JSONException"));
+            onFail(new ApiException(554, BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.convert_fail), "JSONException"));
         } else if (e instanceof ApiException) {
             ApiException exception = (ApiException) e;
             if (exception.getCode() == 10003 || exception.getCode()== 10011) {
@@ -54,7 +55,7 @@ public abstract class BaseSubscriber<T> implements Observer<T> {
                 onFail(exception);
             }
         } else {
-            onFail(new ApiException(509, "未知错误,请稍后重试", "Exception"));
+            onFail(new ApiException(509, BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.connect_fail), "Exception"));
         }
     }
 
