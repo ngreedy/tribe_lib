@@ -48,12 +48,10 @@ public abstract class BaseSubscriber<T> implements Observer<T> {
             onFail(new ApiException(554, BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.convert_fail), "JSONException"));
         } else if (e instanceof ApiException) {
             ApiException exception = (ApiException) e;
-            if (exception.getCode() == 10003 || exception.getCode()== 10011) {
-                ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), exception.getDisplayMessage());
+            if (exception.getCode() == 10003 || exception.getCode() == 10011) {
                 EventBus.getDefault().post(new TokenEvent());
-            } else {
-                onFail(exception);
             }
+            onFail(exception);
         } else {
             onFail(new ApiException(509, BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.connect_fail), "Exception"));
         }
