@@ -14,6 +14,7 @@ import android.widget.FrameLayout;
 
 import com.gs.buluo.common.R;
 import com.gs.buluo.common.widget.StatusLayout;
+import com.gs.buluo.common.widget.recyclerHelper.refreshLayout.EasyRefreshLayout;
 
 
 /**
@@ -21,7 +22,7 @@ import com.gs.buluo.common.widget.StatusLayout;
  */
 
 public class RefreshRecyclerView extends FrameLayout {
-    private SwipeRefreshLayout mSwipeRefreshLayout;
+    private EasyRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
     private BaseQuickAdapter mAdapter;
     private StatusLayout statusLayout;
@@ -57,7 +58,7 @@ public class RefreshRecyclerView extends FrameLayout {
         View view = inflate(context, R.layout.common_status_refresh_recycler, this);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.recycler_swipe);
+        mSwipeRefreshLayout = (EasyRefreshLayout) view.findViewById(R.id.recycler_swipe);
         statusLayout = (StatusLayout) view.findViewById(R.id.recycler_status);
         mSwipeRefreshLayout.setEnabled(false);
         setSwipeRefreshColorsFromRes(R.color.common_custom_color, R.color.common_custom_color_shallow, R.color.common_night_blue
@@ -69,8 +70,8 @@ public class RefreshRecyclerView extends FrameLayout {
     }
 
     public void setSwipeRefreshColorsFromRes(@ColorRes int... colors) {
-        mSwipeRefreshLayout.setColorSchemeResources(colors);
-        mSwipeRefreshLayout.setProgressBackgroundColorSchemeResource(R.color.white);
+//        mSwipeRefreshLayout.setColorSchemeResources(colors);
+//        mSwipeRefreshLayout.setProgressBackgroundColorSchemeResource(R.color.white);
     }
 
     public void setAdapter(BaseQuickAdapter adapter) {
@@ -81,9 +82,9 @@ public class RefreshRecyclerView extends FrameLayout {
 
     public void setRefreshAction(final OnRefreshListener action) {
         mSwipeRefreshLayout.setEnabled(true);
-        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        mSwipeRefreshLayout.addEasyEvent(new EasyRefreshLayout.EasyEvent() {
             @Override
-            public void onRefresh() {
+            public void onRefreshing() {
                 action.onAction();
             }
         });
@@ -96,7 +97,7 @@ public class RefreshRecyclerView extends FrameLayout {
         mAdapter.clearData();
     }
 
-    public SwipeRefreshLayout getRefreshLayout() {
+    public EasyRefreshLayout getRefreshLayout() {
         return mSwipeRefreshLayout;
     }
 
