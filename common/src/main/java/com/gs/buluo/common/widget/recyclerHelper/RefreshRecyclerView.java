@@ -3,6 +3,7 @@ package com.gs.buluo.common.widget.recyclerHelper;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
 import android.support.annotation.ColorRes;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -11,10 +12,15 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.gs.buluo.common.R;
 import com.gs.buluo.common.widget.StatusLayout;
 import com.gs.buluo.common.widget.recyclerHelper.refreshLayout.EasyRefreshLayout;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -85,7 +91,14 @@ public class RefreshRecyclerView extends FrameLayout {
         mSwipeRefreshLayout.addEasyEvent(new EasyRefreshLayout.EasyEvent() {
             @Override
             public void onRefreshing() {
-                action.onAction();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        action.onAction();
+                        mSwipeRefreshLayout.refreshComplete();
+                    }
+                }, 1000);
+
             }
         });
     }

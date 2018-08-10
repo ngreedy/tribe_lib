@@ -188,13 +188,13 @@ public class EasyRefreshLayout extends ViewGroup {
 
 
         /*测量loadMoreView*/
-        measureChild(mLoadMoreView, widthMeasureSpec, heightMeasureSpec);
-        if (!hasMeasureLoadMoreView) {
-            /*headerView还没有被测量*/
-            hasMeasureLoadMoreView = true;
-            //获取测量的高度
-            loadMoreViewHeight = mLoadMoreView.getMeasuredHeight();
-        }
+//        measureChild(mLoadMoreView, widthMeasureSpec, heightMeasureSpec);
+//        if (!hasMeasureLoadMoreView) {
+//            /*headerView还没有被测量*/
+//            hasMeasureLoadMoreView = true;
+//            //获取测量的高度
+//            loadMoreViewHeight = mLoadMoreView.getMeasuredHeight();
+//        }
     }
 
     private void initContentView() {
@@ -254,12 +254,12 @@ public class EasyRefreshLayout extends ViewGroup {
 
         //loadMoreView 放到contentView 下方
 
-        int loadMoreViewWidth = mLoadMoreView.getMeasuredWidth();
-        int loadL = width / 2 - loadMoreViewWidth / 2;
-        int loadT = childHeight;
-        int loadR = width / 2 + loadMoreViewWidth / 2;
-        int loadB = childHeight + loadMoreViewHeight;
-        mLoadMoreView.layout(loadL, loadT, loadR, loadB);
+//        int loadMoreViewWidth = mLoadMoreView.getMeasuredWidth();
+//        int loadL = width / 2 - loadMoreViewWidth / 2;
+//        int loadT = childHeight;
+//        int loadR = width / 2 + loadMoreViewWidth / 2;
+//        int loadB = childHeight + loadMoreViewHeight;
+//        mLoadMoreView.layout(loadL, loadT, loadR, loadB);
 
     }
 
@@ -858,20 +858,20 @@ public class EasyRefreshLayout extends ViewGroup {
 //    }
 
     public void setLoadMoreView(View loadMoreView) {
-        if (loadMoreView == null)
-            throw new ERVHRuntimeException("loadMoreView can not be null");
-        if (loadMoreView != null && loadMoreView != mLoadMoreView)
-            removeView(mLoadMoreView);
-
-        /*设置默认的布局参数*/
-        LayoutParams layoutParams = loadMoreView.getLayoutParams();
-        if (layoutParams == null) {
-            layoutParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-            loadMoreView.setLayoutParams(layoutParams);
-        }
-        mLoadMoreView = loadMoreView;
-        addView(mLoadMoreView);
-        resetLoadMoreState();
+//        if (loadMoreView == null)
+//            throw new ERVHRuntimeException("loadMoreView can not be null");
+//        if (loadMoreView != null && loadMoreView != mLoadMoreView)
+//            removeView(mLoadMoreView);
+//
+//        /*设置默认的布局参数*/
+//        LayoutParams layoutParams = loadMoreView.getLayoutParams();
+//        if (layoutParams == null) {
+//            layoutParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+//            loadMoreView.setLayoutParams(layoutParams);
+//        }
+//        mLoadMoreView = loadMoreView;
+//        addView(mLoadMoreView);
+//        resetLoadMoreState();
 //        ((ILoadMoreView) mLoadMoreView).reset();
 
 //        ((ILoadMoreView) mLoadMoreView).getCanClickFailView().setOnClickListener(new OnClickListener() {

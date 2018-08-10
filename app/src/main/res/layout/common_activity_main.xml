@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<com.gs.buluo.common.widget.recyclerHelper.RefreshRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_orders"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-</LinearLayout>
+
+</com.gs.buluo.common.widget.recyclerHelper.RefreshRecyclerView>
