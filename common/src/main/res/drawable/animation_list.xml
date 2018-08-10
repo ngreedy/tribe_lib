@@ -1,0 +1,91 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">//设置是否循环播放，默认的是循环播放，false为只播放一次
+    <item
+        android:drawable="@drawable/refreshimage1"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage2"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage3"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage4"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage5"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage6"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage7"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage8"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage9"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage10"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage11"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage12"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage13"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage14"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage15"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage16"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage17"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage18"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage19"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage20"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage21"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage22"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage23"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage24"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage25"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage26"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage27"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage28"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/refreshimage29"
+        android:duration="50" />
+
+</animation-list>
