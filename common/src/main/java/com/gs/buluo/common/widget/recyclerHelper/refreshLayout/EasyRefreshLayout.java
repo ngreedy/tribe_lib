@@ -39,8 +39,6 @@ public class EasyRefreshLayout extends ViewGroup {
 
     private boolean isEnablePullToRefresh = true;
     private boolean isRefreshing;
-
-
     private int touchSlop;
     private View refreshHeaderView;
     private int currentOffsetTop;
@@ -205,7 +203,7 @@ public class EasyRefreshLayout extends ViewGroup {
                 ViewGroup child0 = (ViewGroup) getChildAt(1);
                 View child = child0.getChildAt(4);
                 if (!child.equals(refreshHeaderView) && !child.equals(mLoadMoreView)) {
-                    contentView = child0;
+                    contentView = child;
                     mmR = child;
                     if (mmR instanceof RecyclerView) {
                         isRecycerView = true;
