@@ -29,7 +29,7 @@ public class CommonMainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.common_activity_main);
-        for (int i = 0; i <5 ; i++) {
+        for (int i = 0; i <30 ; i++) {
             data.add(1);
         }
         recyclerView = findViewById(R.id.rv_orders);
