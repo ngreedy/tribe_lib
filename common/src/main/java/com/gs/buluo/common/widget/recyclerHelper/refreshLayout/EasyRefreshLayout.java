@@ -207,6 +207,7 @@ public class EasyRefreshLayout extends ViewGroup {
                 if (!child.equals(refreshHeaderView) && !child.equals(mLoadMoreView)) {
 //                    contentView = child0;
                     contentView = child;
+
                     if (contentView instanceof RecyclerView) {
                         isRecycerView = true;
                     } else {
