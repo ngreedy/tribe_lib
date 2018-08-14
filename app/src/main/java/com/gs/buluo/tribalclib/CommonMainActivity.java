@@ -40,7 +40,11 @@ public class CommonMainActivity extends Activity {
         recyclerView.setRefreshAction(new OnRefreshListener() {
             @Override
             public void onAction() {
-
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         });
     }

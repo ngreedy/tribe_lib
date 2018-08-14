@@ -45,7 +45,7 @@ public class EasyRefreshLayout extends ViewGroup {
     private View refreshHeaderView;
     private int currentOffsetTop;
 
-    private View contentView;
+//    private View contentView;
     private boolean hasMeasureHeaderView = false;
     private int headerViewHight;
     private int totalDragDistance;
@@ -80,7 +80,7 @@ public class EasyRefreshLayout extends ViewGroup {
 //    private LoadModel loadMoreModel = LoadModel.COMMON_MODEL;
     //还剩多少个item时触发预加载
     private int advanceCount = 0;
-    private View mmR;
+    private View contentView;
 
     public EasyRefreshLayout(Context context) {
         this(context, null);
@@ -202,12 +202,12 @@ public class EasyRefreshLayout extends ViewGroup {
         // Don't bother getting the parent height if the parent hasn't been laid
         // out yet.
         if (contentView == null) {
-                ViewGroup child0 = (ViewGroup) getChildAt(1);
-                View child = child0.getChildAt(4);
+                ViewGroup child = (ViewGroup) getChildAt(1);
+//                View child = child0.getChildAt(4);
                 if (!child.equals(refreshHeaderView) && !child.equals(mLoadMoreView)) {
-                    contentView = child0;
-                    mmR = child;
-                    if (mmR instanceof RecyclerView) {
+//                    contentView = child0;
+                    contentView = child;
+                    if (contentView instanceof RecyclerView) {
                         isRecycerView = true;
                     } else {
                         isRecycerView = false;
@@ -287,7 +287,7 @@ public class EasyRefreshLayout extends ViewGroup {
                 isBeginDragged = false;
                 // 上一次contentView的偏移高度
                 lastOffsetTop = currentOffsetTop;
-                currentOffsetTop = mmR.getTop();
+                currentOffsetTop = contentView.getTop();
                 // 手指按下时的坐标
                 initDownX = lastMotionX = ev.getX(0);
                 initDownY = lastMotionY = ev.getY(0);
@@ -473,17 +473,17 @@ public class EasyRefreshLayout extends ViewGroup {
 
     private boolean canChildScrollUp() {
         if (android.os.Build.VERSION.SDK_INT < 14) {
-            if (mmR instanceof AbsListView) {
-                final AbsListView absListView = (AbsListView) mmR;
+            if (contentView instanceof AbsListView) {
+                final AbsListView absListView = (AbsListView) contentView;
                 return absListView.getChildCount() > 0
                         && (absListView.getFirstVisiblePosition() > 0 || absListView.getChildAt(0)
                         .getTop() < absListView.getPaddingTop());
             } else {
-                return ViewCompat.canScrollVertically(mmR, -1) || mmR.getScrollY() > 0;
+                return ViewCompat.canScrollVertically(contentView, -1) || contentView.getScrollY() > 0;
             }
         } else {
             /*return true can  swipe up*/
-            return ViewCompat.canScrollVertically(mmR, -1);
+            return ViewCompat.canScrollVertically(contentView, -1);
         }
     }
 
@@ -492,10 +492,10 @@ public class EasyRefreshLayout extends ViewGroup {
             return;
         }
 
-        mmR.offsetTopAndBottom(offset);
+        contentView.offsetTopAndBottom(offset);
         refreshHeaderView.offsetTopAndBottom(offset);
         lastOffsetTop = currentOffsetTop;
-        currentOffsetTop = mmR.getTop();
+        currentOffsetTop = contentView.getTop();
         invalidate();
     }
 
@@ -685,7 +685,7 @@ public class EasyRefreshLayout extends ViewGroup {
         if (!isRecycerView) {
             return;
         }
-        mRecyclerView = (RecyclerView) mmR;
+        mRecyclerView = (RecyclerView) contentView;
         mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
 
 
