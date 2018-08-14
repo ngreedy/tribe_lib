@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.gs.buluo.common.widget.recyclerHelper.RefreshRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rv_orders"
-    android:layout_marginTop="50dp"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</com.gs.buluo.common.widget.recyclerHelper.RefreshRecyclerView>
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.gs.buluo.common.widget.recyclerHelper.RefreshRecyclerView
+        android:id="@+id/rv_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:layout_gravity="bottom"
+        android:text="sd"
+        />
+</FrameLayout>
