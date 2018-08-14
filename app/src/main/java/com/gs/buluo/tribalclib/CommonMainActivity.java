@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.gs.buluo.common.utils.DensityUtils;
+import com.gs.buluo.common.widget.LoadingDialog;
 import com.gs.buluo.common.widget.StatusLayout;
 import com.gs.buluo.common.widget.recyclerHelper.OnRefreshListener;
 import com.gs.buluo.common.widget.recyclerHelper.RefreshRecyclerView;
@@ -36,15 +37,16 @@ public class CommonMainActivity extends Activity {
         adapter = new OrderStatusRvAdapter(this, R.layout.item_order_status, data);
 
         recyclerView.setAdapter(adapter);
+        LoadingDialog.getInstance().show(this,"",true);
         recyclerView.getRecyclerView().setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setRefreshAction(new OnRefreshListener() {
             @Override
             public void onAction() {
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    Thread.sleep(3000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
             }
         });
     }
