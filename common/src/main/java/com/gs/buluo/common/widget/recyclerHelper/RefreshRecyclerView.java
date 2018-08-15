@@ -29,9 +29,8 @@ import java.util.List;
 
 public class RefreshRecyclerView extends FrameLayout {
     private EasyRefreshLayout mSwipeRefreshLayout;
-    private RecyclerView mRecyclerView;
+    private EaeRecyclerView mRecyclerView;
     private BaseQuickAdapter mAdapter;
-    private StatusLayout statusLayout;
 
     public RefreshRecyclerView(Context context) {
         this(context, null);
@@ -54,24 +53,23 @@ public class RefreshRecyclerView extends FrameLayout {
         } finally {
             a.recycle();
         }
-        statusLayout.getEmptyImageView().setImageDrawable(emptyDrawable);
-        statusLayout.getErrorImageView().setImageDrawable(errorDrawable);
-        statusLayout.getLoginImageView().setImageDrawable(loginDrawable);
+        mRecyclerView.setEmptyDrawable(emptyDrawable);
+        mRecyclerView.setErrorDrawable(errorDrawable);
+        mRecyclerView.setLoginDrawable(loginDrawable);
     }
 
     public RefreshRecyclerView(Context context, @Nullable AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         View view = inflate(context, R.layout.common_status_refresh_recycler, this);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        mRecyclerView = (EaeRecyclerView) view.findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mSwipeRefreshLayout = (EasyRefreshLayout) view.findViewById(R.id.recycler_swipe);
-        statusLayout = (StatusLayout) view.findViewById(R.id.recycler_status);
         mSwipeRefreshLayout.setEnabled(false);
         setSwipeRefreshColorsFromRes(R.color.common_custom_color, R.color.common_custom_color_shallow, R.color.common_night_blue
         );
     }
 
-    public RecyclerView getRecyclerView() {
+    public EaeRecyclerView getRecyclerView() {
         return mRecyclerView;
     }
 
@@ -115,30 +113,29 @@ public class RefreshRecyclerView extends FrameLayout {
     }
 
     public void showEmptyView() {
-        statusLayout.showEmptyView();
+        mRecyclerView.showEmptyView();
     }
 
     public void showEmptyView(String msg) {
-        statusLayout.showEmptyView(msg);
+        mRecyclerView.showEmptyView(msg);
     }
 
     public void showErrorView() {
-        statusLayout.showErrorView();
+        mRecyclerView.showErrorView();
     }
 
     public void showErrorView(String msg) {
-        statusLayout.showErrorView(msg);
+        mRecyclerView.showErrorView(msg);
     }
 
     public void showContentView() {
-        statusLayout.showContentView();
-    }
-
-    public StatusLayout getStatusLayout() {
-        return statusLayout;
+        mRecyclerView.showContentView();
     }
 
     public void showProgressView() {
-        statusLayout.showProgressView();
+        mRecyclerView.showProgressView();
+    }
+    public void showProgressView(String msg) {
+        mRecyclerView.showProgressView(msg);
     }
 }
