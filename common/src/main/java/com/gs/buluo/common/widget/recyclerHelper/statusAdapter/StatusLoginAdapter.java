@@ -25,7 +25,7 @@ public class StatusLoginAdapter extends BaseQuickAdapter<EaeEntity, BaseHolder> 
 
     @Override
     protected void convert(BaseHolder helper, EaeEntity item) {
-        if (TextUtils.isEmpty(item.msg)) {
+        if (!TextUtils.isEmpty(item.msg)) {
             helper.setText(R.id.loginTextView, item.msg);
         }
         helper.setVisible(R.id.login_click_view, item.isActVisible);
