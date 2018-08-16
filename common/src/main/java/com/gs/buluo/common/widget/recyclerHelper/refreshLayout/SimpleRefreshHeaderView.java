@@ -5,12 +5,13 @@ import android.graphics.drawable.AnimationDrawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import com.gs.buluo.common.R;
 
 public class SimpleRefreshHeaderView extends FrameLayout implements IRefreshHeader {
-    private View arrowIcon;
-    private View successIcon;
+    private ImageView arrowIcon;
+    private ImageView successIcon;
     AnimationDrawable frameAnim;
 
     public SimpleRefreshHeaderView(Context context) {
@@ -23,9 +24,10 @@ public class SimpleRefreshHeaderView extends FrameLayout implements IRefreshHead
 
         inflate(context, R.layout.refresh_header, this);
 
-        arrowIcon = findViewById(R.id.arrowIcon);
-        successIcon = findViewById(R.id.successIcon);
-        successIcon.setBackgroundDrawable(frameAnim);
+        arrowIcon = (ImageView) findViewById(R.id.arrowIcon);
+        successIcon = (ImageView) findViewById(R.id.successIcon);
+//        successIcon.setBackgroundDrawable(frameAnim);
+        successIcon.setImageDrawable(frameAnim);
     }
 
     @Override

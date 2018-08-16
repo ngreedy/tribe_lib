@@ -85,7 +85,7 @@ public class RefreshRecyclerView extends FrameLayout {
     }
 
     public void setRefreshAction(final OnRefreshListener action) {
-        mSwipeRefreshLayout.setEnabled(true);
+        mSwipeRefreshLayout.setEnablePullToRefresh(true);
         mSwipeRefreshLayout.addEasyEvent(new EasyRefreshLayout.EasyEvent() {
             @Override
             public void onRefreshing() {
