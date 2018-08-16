@@ -25,7 +25,7 @@ public class StatusErrorAdapter extends BaseQuickAdapter<EaeEntity, BaseHolder> 
 
     @Override
     protected void convert(BaseHolder helper, EaeEntity item) {
-        if (TextUtils.isEmpty(item.msg)) {
+        if (!TextUtils.isEmpty(item.msg)) {
             helper.setText(R.id.errorTextView, item.msg);
         }
         helper.setVisible(R.id.error_click_view, item.isActVisible);

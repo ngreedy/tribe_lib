@@ -25,7 +25,7 @@ public class StatusEmptyAdapter extends BaseQuickAdapter<EaeEntity, BaseHolder> 
 
     @Override
     protected void convert(BaseHolder helper, EaeEntity item) {
-        if (TextUtils.isEmpty(item.msg)) {
+        if (!TextUtils.isEmpty(item.msg)) {
             helper.setText(R.id.emptyTextView, item.msg);
         }
         helper.setVisible(R.id.empty_click_view, item.isActVisible);

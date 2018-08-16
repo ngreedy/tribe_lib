@@ -102,7 +102,7 @@ public class EaeRecyclerView extends RecyclerView {
 
     public void showErrorView(String msg) {
         List<EaeEntity> data = new ArrayList<>();
-        EaeEntity entity = new EaeEntity(msg,emptyDrawable,isEmptyActVisible,empBacId,empMargin);
+        EaeEntity entity = new EaeEntity(msg,errorDrawable,isErrorActVisible,errBacId,errMargin);
         data.add(entity);
         errorViewAdapter = new StatusErrorAdapter(R.layout.status_view_error, data);
         super.setAdapter(errorViewAdapter);
@@ -117,7 +117,7 @@ public class EaeRecyclerView extends RecyclerView {
 
     public void showProgressView(String msg) {
         List<EaeEntity> data = new ArrayList<>();
-        EaeEntity entity = new EaeEntity(msg,emptyDrawable,isEmptyActVisible,empBacId,empMargin);
+        EaeEntity entity = new EaeEntity(msg,null,false,0,proMargin);
         data.add(entity);
         if (progressViewId != -1) {
             progressViewAdapter = new StatusProgressAdapter(progressViewId, data);
@@ -133,7 +133,7 @@ public class EaeRecyclerView extends RecyclerView {
 
     public void showLoginView(String msg) {
         List<EaeEntity> data = new ArrayList<>();
-        EaeEntity entity = new EaeEntity(msg,emptyDrawable,isEmptyActVisible,empBacId,empMargin);
+        EaeEntity entity = new EaeEntity(msg,loginDrawable,isLoginActVisible,0,logMargin);
         data.add(entity);
         loginViewAdapter = new StatusLoginAdapter(R.layout.status_view_login, data);
         super.setAdapter(loginViewAdapter);

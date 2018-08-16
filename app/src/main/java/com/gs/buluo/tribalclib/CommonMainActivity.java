@@ -49,7 +49,7 @@ public class CommonMainActivity extends Activity {
         recyclerView.setRefreshAction(new OnRefreshListener() {
             @Override
             public void onAction() {
-                recyclerView.showEmptyView();
+                recyclerView.showEmptyView("lala");
             }
         });
     }

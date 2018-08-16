@@ -26,7 +26,7 @@ public class StatusProgressAdapter extends BaseQuickAdapter<EaeEntity, BaseHolde
 
     @Override
     protected void convert(BaseHolder helper, EaeEntity item) {
-        if (TextUtils.isEmpty(item.msg)) {
+        if (!TextUtils.isEmpty(item.msg)) {
             helper.setText(R.id.progressTextView, item.msg);
         }
         ProgressBar progressBar = helper.getView(R.id.progress_wheel);
