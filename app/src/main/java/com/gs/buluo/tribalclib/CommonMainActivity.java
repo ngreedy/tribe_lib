@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.gs.buluo.common.utils.DensityUtils;
+import com.gs.buluo.common.utils.ToastUtils;
+import com.gs.buluo.common.widget.LoadingDialog;
 import com.gs.buluo.common.widget.StatusLayout;
 import com.gs.buluo.common.widget.recyclerHelper.OnRefreshListener;
 import com.gs.buluo.common.widget.recyclerHelper.RefreshRecyclerView;
@@ -25,26 +27,29 @@ public class CommonMainActivity extends Activity {
     RefreshRecyclerView recyclerView;
     OrderStatusRvAdapter adapter;
     List<Integer> data = new ArrayList();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.common_activity_main);
-        for (int i = 0; i <30 ; i++) {
+        for (int i = 0; i < 30; i++) {
             data.add(1);
         }
         recyclerView = findViewById(R.id.rv_orders);
+        recyclerView.getRecyclerView().setEmptyAction(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ToastUtils.ToastMessage(getApplication(),"hehe");
+            }
+        });
+        recyclerView.getRecyclerView().setEmptyActionBackground(R.mipmap.ic_launcher);
         adapter = new OrderStatusRvAdapter(this, R.layout.item_order_status, data);
 
         recyclerView.setAdapter(adapter);
-        recyclerView.getRecyclerView().setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setRefreshAction(new OnRefreshListener() {
             @Override
             public void onAction() {
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                recyclerView.showEmptyView();
             }
         });
     }

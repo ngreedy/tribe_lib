@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.gs.buluo.common.widget.StatusLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/recycler_status"
+<com.gs.buluo.common.widget.recyclerHelper.refreshLayout.EasyRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_swipe"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.gs.buluo.common.widget.recyclerHelper.refreshLayout.EasyRefreshLayout
-        android:id="@+id/recycler_swipe"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <android.support.v7.widget.RecyclerView
+        <com.gs.buluo.common.widget.recyclerHelper.EaeRecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </com.gs.buluo.common.widget.recyclerHelper.refreshLayout.EasyRefreshLayout>
-</com.gs.buluo.common.widget.StatusLayout>
