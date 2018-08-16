@@ -37,7 +37,7 @@ public class EasyRefreshLayout extends ViewGroup {
 
     private State state = State.RESET;
 
-    private boolean isEnablePullToRefresh = true;
+    private boolean isEnablePullToRefresh = false;
     private boolean isRefreshing;
 
 
@@ -45,7 +45,7 @@ public class EasyRefreshLayout extends ViewGroup {
     private View refreshHeaderView;
     private int currentOffsetTop;
 
-//    private View contentView;
+    //    private View contentView;
     private boolean hasMeasureHeaderView = false;
     private int headerViewHight;
     private int totalDragDistance;
@@ -202,17 +202,17 @@ public class EasyRefreshLayout extends ViewGroup {
         // Don't bother getting the parent height if the parent hasn't been laid
         // out yet.
         if (contentView == null) {
-                ViewGroup child = (ViewGroup) getChildAt(1);
+            ViewGroup child = (ViewGroup) getChildAt(1);
 //                View child = child0.getChildAt(4);
-                if (!child.equals(refreshHeaderView) && !child.equals(mLoadMoreView)) {
+            if (!child.equals(refreshHeaderView) && !child.equals(mLoadMoreView)) {
 //                    contentView = child0;
-                    contentView = child;
+                contentView = child;
 
-                    if (contentView instanceof RecyclerView) {
-                        isRecycerView = true;
-                    } else {
-                        isRecycerView = false;
-                    }
+                if (contentView instanceof RecyclerView) {
+                    isRecycerView = true;
+                } else {
+                    isRecycerView = false;
+                }
             }
         }
         if (isRecycerView)
