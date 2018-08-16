@@ -29,6 +29,9 @@ public class StatusLoginAdapter extends BaseQuickAdapter<EaeEntity, BaseHolder> 
             helper.setText(R.id.loginTextView, item.msg);
         }
         helper.setVisible(R.id.login_click_view, item.isActVisible);
+        if (!TextUtils.isEmpty(item.actText)) {
+            helper.setText(R.id.login_click_view, item.actText);
+        }
         ImageView imageView = helper.getView(R.id.loginImageView);
         if (item.drawable != null) {
             imageView.setImageDrawable(item.drawable);

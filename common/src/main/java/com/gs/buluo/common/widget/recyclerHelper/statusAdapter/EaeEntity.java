@@ -10,14 +10,16 @@ public class EaeEntity {
     public String msg;
     public Drawable drawable;
     public boolean isActVisible;
+    public String actText;
     public int bacId;
     public int[] marginArgs;
 
-    public EaeEntity(String msg, Drawable drawable, boolean isActVisible, int bacId, int[] margin) {
+    public EaeEntity(String msg, Drawable drawable, boolean isActVisible, String actText, int bacId, int[] margin) {
         this.msg = msg;
         this.drawable = drawable;
         this.isActVisible = isActVisible;
         this.bacId = bacId;
         this.marginArgs = margin;
+        this.actText = actText;
     }
 }

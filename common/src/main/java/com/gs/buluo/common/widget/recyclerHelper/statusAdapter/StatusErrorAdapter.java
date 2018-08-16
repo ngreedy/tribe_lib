@@ -29,6 +29,9 @@ public class StatusErrorAdapter extends BaseQuickAdapter<EaeEntity, BaseHolder> 
             helper.setText(R.id.errorTextView, item.msg);
         }
         helper.setVisible(R.id.error_click_view, item.isActVisible);
+        if (!TextUtils.isEmpty(item.actText)) {
+            helper.setText(R.id.error_click_view, item.actText);
+        }
         ImageView imageView = helper.getView(R.id.errorImageView);
         if (item.drawable != null) {
             imageView.setImageDrawable(item.drawable);

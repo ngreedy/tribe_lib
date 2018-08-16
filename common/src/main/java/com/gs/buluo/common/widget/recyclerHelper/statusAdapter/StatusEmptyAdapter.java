@@ -29,6 +29,9 @@ public class StatusEmptyAdapter extends BaseQuickAdapter<EaeEntity, BaseHolder> 
             helper.setText(R.id.emptyTextView, item.msg);
         }
         helper.setVisible(R.id.empty_click_view, item.isActVisible);
+        if (!TextUtils.isEmpty(item.actText)) {
+            helper.setText(R.id.empty_click_view, item.actText);
+        }
         ImageView imageView = helper.getView(R.id.emptyImageView);
         if (item.drawable != null) {
             imageView.setImageDrawable(item.drawable);
