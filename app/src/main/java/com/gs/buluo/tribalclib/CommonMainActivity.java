@@ -49,6 +49,7 @@ public class CommonMainActivity extends Activity {
         recyclerView.setRefreshAction(new OnRefreshListener() {
             @Override
             public void onAction() {
+                recyclerView.getRecyclerView().setEmptyActViewText("去哪儿");
                 recyclerView.showEmptyView("lala");
             }
         });

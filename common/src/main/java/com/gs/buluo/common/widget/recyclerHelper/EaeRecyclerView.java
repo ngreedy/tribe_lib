@@ -7,7 +7,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.TextView;
 
 import com.gs.buluo.common.R;
 import com.gs.buluo.common.widget.recyclerHelper.statusAdapter.EaeEntity;
@@ -45,6 +44,9 @@ public class EaeRecyclerView extends RecyclerView {
     private int[] logMargin;
     private int[] errMargin;
     private int[] proMargin;
+    private String empActText;
+    private String errActText;
+    private String logActText;
 
     public EaeRecyclerView(Context context) {
         this(context, null);
@@ -87,11 +89,11 @@ public class EaeRecyclerView extends RecyclerView {
 
     public void showEmptyView(String msg) {
         List<EaeEntity> data = new ArrayList<>();
-        EaeEntity entity = new EaeEntity(msg,emptyDrawable,isEmptyActVisible,empBacId,empMargin);
+        EaeEntity entity = new EaeEntity(msg, emptyDrawable, isEmptyActVisible,empActText, empBacId, empMargin);
         data.add(entity);
         emptyViewAdapter = new StatusEmptyAdapter(R.layout.status_view_empty, data);
         super.setAdapter(emptyViewAdapter);
-        if (isEmptyActVisible){
+        if (isEmptyActVisible) {
             emptyViewAdapter.setOnItemClickListener(emptyClickListener);
         }
     }
@@ -102,11 +104,11 @@ public class EaeRecyclerView extends RecyclerView {
 
     public void showErrorView(String msg) {
         List<EaeEntity> data = new ArrayList<>();
-        EaeEntity entity = new EaeEntity(msg,errorDrawable,isErrorActVisible,errBacId,errMargin);
+        EaeEntity entity = new EaeEntity(msg, errorDrawable, isErrorActVisible, errActText, errBacId, errMargin);
         data.add(entity);
         errorViewAdapter = new StatusErrorAdapter(R.layout.status_view_error, data);
         super.setAdapter(errorViewAdapter);
-        if (isErrorActVisible){
+        if (isErrorActVisible) {
             errorViewAdapter.setOnItemClickListener(errorClickListener);
         }
     }
@@ -117,7 +119,7 @@ public class EaeRecyclerView extends RecyclerView {
 
     public void showProgressView(String msg) {
         List<EaeEntity> data = new ArrayList<>();
-        EaeEntity entity = new EaeEntity(msg,null,false,0,proMargin);
+        EaeEntity entity = new EaeEntity(msg, null, false, null, 0, proMargin);
         data.add(entity);
         if (progressViewId != -1) {
             progressViewAdapter = new StatusProgressAdapter(progressViewId, data);
@@ -133,11 +135,11 @@ public class EaeRecyclerView extends RecyclerView {
 
     public void showLoginView(String msg) {
         List<EaeEntity> data = new ArrayList<>();
-        EaeEntity entity = new EaeEntity(msg,loginDrawable,isLoginActVisible,0,logMargin);
+        EaeEntity entity = new EaeEntity(msg, loginDrawable, isLoginActVisible, logActText, 0, logMargin);
         data.add(entity);
         loginViewAdapter = new StatusLoginAdapter(R.layout.status_view_login, data);
         super.setAdapter(loginViewAdapter);
-        if (isLoginActVisible){
+        if (isLoginActVisible) {
             loginViewAdapter.setOnItemClickListener(loginClickListener);
         }
     }
@@ -199,20 +201,29 @@ public class EaeRecyclerView extends RecyclerView {
         empBacId = resId;
     }
 
-    public TextView getEmptyActView() {
-//        return emptyActView;
-        return null;
+    public void setEmptyActViewVisible(boolean isVisible) {
+        isEmptyActVisible = isVisible;
     }
 
-    public TextView getErrorActView() {
-//        return errorActView;
-        return null;
+    public void setErrorActViewVisible(boolean isVisible) {
+        isErrorActVisible = isVisible;
     }
 
-    public TextView getLoginActView() {
-//        return loginActView;
-        return null;
+    public void setLoginActViewVisible(boolean isVisible) {
+        isLoginActVisible = isVisible;
     }
+    public void setEmptyActViewText(String text) {
+        empActText = text;
+    }
+
+    public void setErrorActViewText(String text) {
+        errActText = text;
+    }
+
+    public void setLoginActViewText(String text) {
+        logActText = text;
+    }
+
 
     public void setEmptyContentViewMargin(int left, int top, int right, int bottom) {
         empMargin = new int[]{left, top, right, bottom};
