@@ -45,7 +45,6 @@ public class CommonMainActivity extends Activity {
         recyclerView.getRecyclerView().setEmptyActionBackground(R.mipmap.ic_launcher);
         adapter = new OrderStatusRvAdapter(this, R.layout.item_order_status, data);
 
-
         recyclerView.setAdapter(adapter);
         recyclerView.setRefreshAction(new OnRefreshListener() {
             @Override
