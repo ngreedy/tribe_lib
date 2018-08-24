@@ -31,5 +31,5 @@
         android:text="@string/retry"
         android:textColor="@color/common_common_blue"
         android:gravity="center"
-        android:clickable="true"/>
+        />
 </LinearLayout>
