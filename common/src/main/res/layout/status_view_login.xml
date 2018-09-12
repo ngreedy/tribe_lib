@@ -30,6 +30,5 @@
         android:layout_height="40dp"
         android:gravity="center"
         android:text="马上登录"
-        android:clickable="true"
         android:textColor="@color/common_common_blue"/>
 </LinearLayout>
