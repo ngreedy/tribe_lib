@@ -1,6 +1,7 @@
 package com.gs.buluo.common.widget;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -52,6 +53,42 @@ public class CaptchaEditText extends RelativeLayout {
         this.setListener();
     }
 
+    public void setTextBackground(int res) {
+        textViews[0].setBackgroundResource(res);
+        textViews[1].setBackgroundResource(res);
+        textViews[2].setBackgroundResource(res);
+        textViews[3].setBackgroundResource(res);
+        textViews[4].setBackgroundResource(res);
+        textViews[5].setBackgroundResource(res);
+    }
+
+    public void setTextColor(int res){
+        textViews[0].setTextColor(res);
+        textViews[1].setTextColor(res);
+        textViews[2].setTextColor(res);
+        textViews[3].setTextColor(res);
+        textViews[4].setTextColor(res);
+        textViews[5].setTextColor(res);
+    }
+
+    public void setTextSize(int size){
+        textViews[0].setTextSize(size);
+        textViews[1].setTextSize(size);
+        textViews[2].setTextSize(size);
+        textViews[3].setTextSize(size);
+        textViews[4].setTextSize(size);
+        textViews[5].setTextSize(size);
+    }
+
+    public void setTextBold(){
+        textViews[0].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
+        textViews[1].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
+        textViews[2].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
+        textViews[3].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
+        textViews[4].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
+        textViews[5].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
+    }
+
     public void showKeyBoard() {
         (new Handler()).postDelayed(new Runnable() {
             public void run() {
@@ -90,7 +127,7 @@ public class CaptchaEditText extends RelativeLayout {
                     }
 
                     for (int i = 0; i < stringBuffer.length(); ++i) {
-                        textViews[i].setText(stringBuffer.charAt(i)+"");
+                        textViews[i].setText(stringBuffer.charAt(i) + "");
                     }
                 }
 
@@ -98,7 +135,7 @@ public class CaptchaEditText extends RelativeLayout {
         });
         this.editText.setOnKeyListener(new OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
-                return keyCode == 67 && event.getAction() == 0?(CaptchaEditText.this.onKeyDelete()?true:true):false;
+                return keyCode == 67 && event.getAction() == 0 ? (CaptchaEditText.this.onKeyDelete() ? true : true) : false;
             }
         });
     }
