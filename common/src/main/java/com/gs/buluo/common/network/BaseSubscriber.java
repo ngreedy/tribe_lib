@@ -47,7 +47,7 @@ public abstract class BaseSubscriber<T> extends DisposableObserver<T> {
             }
             onFail(exception);
         } else {
-            onFail(new ApiException(509, BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.connect_fail), e.getCause().toString()));
+            onFail(new ApiException(509, BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.connect_fail), e.getMessage()));
         }
     }
 
