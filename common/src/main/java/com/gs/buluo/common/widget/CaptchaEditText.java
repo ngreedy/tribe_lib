@@ -81,12 +81,12 @@ public class CaptchaEditText extends RelativeLayout {
     }
 
     public void setTextBold(){
-        textViews[0].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
-        textViews[1].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
-        textViews[2].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
-        textViews[3].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
-        textViews[4].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
-        textViews[5].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
+        textViews[0].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+        textViews[1].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+        textViews[2].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+        textViews[3].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+        textViews[4].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+        textViews[5].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
     }
 
     public void showKeyBoard() {
