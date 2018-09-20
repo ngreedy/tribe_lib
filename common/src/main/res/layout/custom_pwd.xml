@@ -79,7 +79,7 @@
         android:id="@+id/item_edittext"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:inputType="numberPassword"
+        android:inputType="number"
         android:maxLength="6"
         android:background="@android:color/transparent"/>
 </RelativeLayout>
