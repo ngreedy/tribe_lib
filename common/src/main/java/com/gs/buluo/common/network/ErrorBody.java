@@ -18,7 +18,7 @@ public class ErrorBody {
         public List<DetailErrorBean> details;
     }
 
-    class DetailErrorBean {
+    public class DetailErrorBean {
         public String message;
         public String file;
         public String line_number;
