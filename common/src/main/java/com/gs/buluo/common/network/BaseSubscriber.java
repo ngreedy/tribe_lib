@@ -38,7 +38,7 @@ public abstract class BaseSubscriber<T> extends DisposableObserver<T> {
                 String string = errorBody != null ? errorBody.string() : "";
                 ErrorBody error = new GsonBuilder().create().fromJson(string, ErrorBody.class);
                 if (error.error.details != null && error.error.details.size() > 0) {
-                    onNodeFail(error.code, error.error.details.get(0));
+                    onNodeFail(error.error.code, error.error.details.get(0));
                 } else {
                     throw new IOException();
                 }
