@@ -1,8 +1,7 @@
 package com.gs.buluo.common.network;
 
 
-import android.util.Log;
-
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonParseException;
 import com.gs.buluo.common.BaseApplication;
 import com.gs.buluo.common.R;
@@ -14,9 +13,8 @@ import org.json.JSONException;
 
 import java.io.IOException;
 
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.observers.DisposableObserver;
+import okhttp3.ResponseBody;
 import retrofit2.HttpException;
 
 /**
@@ -35,7 +33,18 @@ public abstract class BaseSubscriber<T> extends DisposableObserver<T> {
     public void onError(Throwable e) {
         LoadingDialog.getInstance().dismissDialog();
         if (e instanceof HttpException) {       //http返回异常
-            onFail(new ApiException(((HttpException) e).code(), BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.http_fail), "HttpException"));
+            ResponseBody errorBody = ((HttpException) e).response().errorBody();
+            try {
+                String string = errorBody != null ? errorBody.string() : "";
+                ErrorBody error = new GsonBuilder().create().fromJson(string, ErrorBody.class);
+                if (error.error.details != null && error.error.details.size() > 0) {
+                    onNodeFail(error.code, error.error.details.get(0));
+                } else {
+                    throw new IOException();
+                }
+            } catch (IOException e1) {
+                onFail(new ApiException(((HttpException) e).code(), BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.http_fail), "HttpException"));
+            }
         } else if (e instanceof IOException) {
             onFail(new ApiException(555, BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.connect_fail), "IOException"));
         } else if (e instanceof JSONException || e instanceof JsonParseException) {
@@ -49,6 +58,10 @@ public abstract class BaseSubscriber<T> extends DisposableObserver<T> {
         } else {
             onFail(new ApiException(509, BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.connect_fail), e.getMessage()));
         }
+    }
+
+    protected void onNodeFail(int code, ErrorBody.DetailErrorBean message) {
+        ToastUtils.ToastMessage(BaseApplication.getInstance().getApplicationContext(), message.message);
     }
 
     protected void onFail(ApiException e) {
