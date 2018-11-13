@@ -42,7 +42,7 @@ public abstract class BaseSubscriber<T> extends DisposableObserver<T> {
                 } else {
                     throw new IOException();
                 }
-            } catch (IOException e1) {
+            } catch (Exception e1) {
                 onFail(new ApiException(((HttpException) e).code(), BaseApplication.getInstance().getApplicationContext().getResources().getString(R.string.http_fail), "HttpException"));
             }
         } else if (e instanceof IOException) {
