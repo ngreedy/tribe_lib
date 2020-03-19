@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f5f5f5">
-    <TextView
-        android:id="@+id/main_title"
-        android:layout_width="wrap_content"
-        android:text="标题"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="副标题"/>
-    <EditText
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.gs.buluo.common.widget.recyclerHelper.RefreshRecyclerView
+        android:id="@+id/rv_orders"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="输入"/>
-    <com.gs.buluo.common.widget.CaptchaEditText
+        android:layout_height="match_parent"
+        app:emptyDrawable="@mipmap/progress_circle"
+        app:errorDrawable="@mipmap/progress_circle"        />
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"/>
-</LinearLayout>
+        android:background="@color/red"
+        android:layout_gravity="bottom"
+        android:text="sd"
+        />
+</FrameLayout>

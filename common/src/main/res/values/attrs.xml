@@ -3,6 +3,13 @@
     <declare-styleable name="StateLayout">
         <attr name="errorDrawable" format="reference" />
         <attr name="emptyDrawable" format="reference" />
+        <attr name="loginDrawable" format="reference" />
         <attr name="progressView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RefreshRecyclerView">
+        <attr name="refreshErrorDrawable" format="reference" />
+        <attr name="refreshEmptyDrawable" format="reference" />
+        <attr name="refreshLoginDrawable" format="reference" />
     </declare-styleable>
 </resources>

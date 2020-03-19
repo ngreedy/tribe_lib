@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/empty_content"
+<LinearLayout android:id="@+id/empty_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="?attr/selectableItemBackground"
-    android:clickable="true"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageView
         android:id="@+id/emptyImageView"
-        android:layout_width="@dimen/drawable_size"
-        android:layout_height="@dimen/drawable_size"
-        android:layout_marginTop="@dimen/info_margin_top" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/emptyTextView"
@@ -23,19 +19,19 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:gravity="center"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp"
+        android:layout_marginTop="15dp"
         android:text="@string/status_text_empty"
-        android:textColor="#2a2a2a"
-        android:textSize="14sp" />
+        android:textColor="@color/common_common_gray"
+        android:textSize="14dp" />
 
     <TextView
         android:id="@+id/empty_click_view"
-        android:visibility="gone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:gravity="center"
         android:text="@string/retry"
-        android:textColor="#727272"
-        android:textSize="10sp" />
+        android:visibility="gone"
+        android:textSize="14dp"
+        android:textColor="@color/common_common_blue"
+        />
 </LinearLayout>

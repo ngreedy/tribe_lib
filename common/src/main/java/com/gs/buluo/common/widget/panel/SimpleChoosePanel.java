@@ -23,7 +23,7 @@ import java.util.List;
  */
 
 public class SimpleChoosePanel extends Dialog {
-    public SimpleChoosePanel(Context context) {
+    SimpleChoosePanel(Context context) {
         super(context, R.style.my_dialog);
         Window window = getWindow();
         WindowManager.LayoutParams params = window.getAttributes();
@@ -33,19 +33,15 @@ public class SimpleChoosePanel extends Dialog {
         window.setAttributes(params);
     }
 
-    public interface OnSelectedFinished<T>{
-        void onSelected(T string);
-    }
-
     public static class Builder<T> implements View.OnClickListener, OnWheelChangedListener {
         private final Context mContext;
-        private final OnSelectedFinished mOnSelectedFinished;
+        private final OnSelectedFinished<T> mOnSelectedFinished;
         private String title="请选择";
         private T result;
         private SimpleChoosePanel mSimpleChoosePanel;
         private ArrayList<T> data;
 
-        public Builder(Context context, OnSelectedFinished onSelectedFinished) {
+        public Builder(Context context, OnSelectedFinished<T> onSelectedFinished) {
             mContext = context;
             mOnSelectedFinished = onSelectedFinished;
         }
@@ -104,5 +100,9 @@ public class SimpleChoosePanel extends Dialog {
                 result =data.get(0);
             }
         }
+    }
+
+    public interface OnSelectedFinished<T>{
+        void onSelected(T string);
     }
 }

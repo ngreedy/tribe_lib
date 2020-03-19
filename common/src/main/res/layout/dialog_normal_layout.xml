@@ -66,8 +66,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/ok"
-                android:textColor="@color/custom_color"/>
+                android:text="@string/cancel"/>
 
             <View
                 android:id="@+id/vertical_line"
@@ -81,7 +80,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/cancel"/>
+                android:textColor="@color/common_night_blue"
+                android:text="@string/ok"/>
         </LinearLayout>
 
     </LinearLayout>

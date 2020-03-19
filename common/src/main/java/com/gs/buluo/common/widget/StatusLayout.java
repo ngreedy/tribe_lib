@@ -34,16 +34,26 @@ public class StatusLayout extends FrameLayout {
     private View errorView;
     private View errorContentView;
 
+    private View loginView;
+    private View loginContentView;
+
+
     private View progressView;
     private View progressContentView;
 
     private TextView emptyTextView;
+    private TextView emptyActView;
     private TextView errorTextView;
+    private TextView errorActView;
+    private TextView loginTextView;
+    private TextView loginActView;
     private TextView progressTextView;
 
     private ImageView errorImageView;
     private ImageView emptyImageView;
+    private ImageView loginImageView;
     private ProgressBar progressBar;
+
 
     private View currentShowingView;
 
@@ -69,6 +79,8 @@ public class StatusLayout extends FrameLayout {
 
         progressView.setVisibility(View.GONE);
 
+        loginView.setVisibility(View.GONE);
+
         currentShowingView = contentView;
     }
 
@@ -79,9 +91,11 @@ public class StatusLayout extends FrameLayout {
         int progressViewId;
         Drawable errorDrawable;
         Drawable emptyDrawable;
+        Drawable loginDrawable;
         try {
             errorDrawable = a.getDrawable(R.styleable.StateLayout_errorDrawable);
             emptyDrawable = a.getDrawable(R.styleable.StateLayout_emptyDrawable);
+            loginDrawable = a.getDrawable(R.styleable.StateLayout_loginDrawable);
             progressViewId = a.getResourceId(R.styleable.StateLayout_progressView, -1);
         } finally {
             a.recycle();
@@ -101,6 +115,7 @@ public class StatusLayout extends FrameLayout {
         errorView = inflater.inflate(R.layout.status_view_error, this, false);
         errorContentView = errorView.findViewById(R.id.error_content);
         errorTextView = (TextView) errorView.findViewById(R.id.errorTextView);
+        errorActView = (TextView) errorView.findViewById(R.id.error_click_view);
         errorImageView = (ImageView) errorView.findViewById(R.id.errorImageView);
         if (errorDrawable != null) {
             errorImageView.setImageDrawable(errorDrawable);
@@ -112,15 +127,27 @@ public class StatusLayout extends FrameLayout {
         emptyContentView = emptyView.findViewById(R.id.empty_content);
         emptyTextView = (TextView) emptyView.findViewById(R.id.emptyTextView);
         emptyImageView = (ImageView) emptyView.findViewById(R.id.emptyImageView);
+        emptyActView = (TextView) emptyView.findViewById(R.id.empty_click_view);
         if (emptyDrawable != null) {
             emptyImageView.setImageDrawable(emptyDrawable);
         }
+
+
         addView(emptyView);
 
+        loginView = inflater.inflate(R.layout.status_view_login, this, false);
+        loginContentView = loginView.findViewById(R.id.login_content);
+        loginTextView = (TextView) loginView.findViewById(R.id.loginTextView);
+        loginImageView = (ImageView) loginView.findViewById(R.id.loginImageView);
+        loginActView = (TextView) loginView.findViewById(R.id.login_click_view);
+        if (loginDrawable != null) {
+            loginImageView.setImageDrawable(loginDrawable);
+        }
+        addView(loginView);
     }
 
     private void checkIsContentView(View view) {
-        if (contentView == null && view != errorView && view != progressView && view != emptyView) {
+        if (contentView == null && view != errorView && view != progressView && view != emptyView && view != loginView) {
             contentView = view;
             currentShowingView = contentView;
         }
@@ -130,6 +157,9 @@ public class StatusLayout extends FrameLayout {
         return errorImageView;
     }
 
+    public ImageView getLoginImageView() {
+        return loginImageView;
+    }
     public ImageView getEmptyImageView() {
         return emptyImageView;
     }
@@ -222,6 +252,10 @@ public class StatusLayout extends FrameLayout {
         ((LinearLayout.LayoutParams) emptyImageView.getLayoutParams()).setMargins(left, top, right, bottom);
     }
 
+    public void setLoginContentViewMargin(int left, int top, int right, int bottom) {
+        ((LinearLayout.LayoutParams) loginImageView.getLayoutParams()).setMargins(left, top, right, bottom);
+    }
+
     public void setErrorContentViewMargin(int left, int top, int right, int bottom) {
         ((LinearLayout.LayoutParams) errorImageView.getLayoutParams()).setMargins(left, top, right, bottom);
     }
@@ -236,7 +270,6 @@ public class StatusLayout extends FrameLayout {
         setErrorContentViewMargin(left, top, right, bottom);
         setProgressContentViewMargin(left, top, right, bottom);
     }
-
 
     public void showContentView() {
         switchWithAnimation(contentView);
@@ -264,6 +297,18 @@ public class StatusLayout extends FrameLayout {
         switchWithAnimation(errorView);
     }
 
+    public void showLoginView(String msg) {
+        onHideContentView();
+        if (msg != null)
+            loginTextView.setText(msg);
+        switchWithAnimation(loginView);
+    }
+
+    public void showLoginView() {
+        showLoginView(null);
+    }
+
+
     public void showProgressView() {
         showProgressView(null);
     }
@@ -275,14 +320,23 @@ public class StatusLayout extends FrameLayout {
         switchWithAnimation(progressView);
     }
 
+
+    public void setLoginAction(final OnClickListener onLoginButtonClickListener) {
+        findViewById(R.id.login_click_view).setVisibility(VISIBLE);
+        loginView.setOnClickListener(onLoginButtonClickListener);
+        loginActView.setOnClickListener(onLoginButtonClickListener);
+    }
+
     public void setErrorAction(final OnClickListener onErrorButtonClickListener) {
         findViewById(R.id.error_click_view).setVisibility(VISIBLE);
         errorView.setOnClickListener(onErrorButtonClickListener);
+        errorActView.setOnClickListener(onErrorButtonClickListener);
     }
 
     public void setEmptyAction(final OnClickListener onEmptyButtonClickListener) {
         findViewById(R.id.empty_click_view).setVisibility(VISIBLE);
         emptyView.setOnClickListener(onEmptyButtonClickListener);
+        emptyActView.setOnClickListener(onEmptyButtonClickListener);
     }
 
 
@@ -291,6 +345,29 @@ public class StatusLayout extends FrameLayout {
         findViewById(R.id.empty_click_view).setVisibility(VISIBLE);
         errorView.setOnClickListener(errorAndEmptyAction);
         emptyView.setOnClickListener(errorAndEmptyAction);
+        emptyActView.setOnClickListener(errorAndEmptyAction);
+        errorActView.setOnClickListener(errorAndEmptyAction);
+    }
+
+
+    public void setErrorActionBackgroud(int resId) {
+        errorActView.setBackgroundResource(resId);
+    }
+
+    public void setEmptyActionBackground(int resId) {
+        emptyActView.setBackgroundResource(resId);
+    }
+
+    public TextView getEmptyActView() {
+        return emptyActView;
+    }
+
+    public TextView getErrorActView() {
+        return errorActView;
+    }
+
+    public TextView getLoginActView() {
+        return loginActView;
     }
 
     protected void onHideContentView() {

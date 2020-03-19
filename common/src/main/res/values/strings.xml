@@ -2,16 +2,17 @@
     <string name="app_name">common</string>
     <string name="loading">加载中</string>
     <string name="login_again">您的账号已在其他设备使用，请重新登录</string>
-    <string name="convert_fail">网络连接异常</string>
-    <string name="connect_fail">网络状况不佳，请稍后再试</string>
-    <string name="http_fail">服务器无法连接</string>
+    <string name="convert_fail">数据转换异常</string>y
+    <string name="connect_fail">当前网络状况不佳，请稍后再试</string>
+    <string name="http_fail">网络状况不佳，请稍后再试</string>
     <string name="ok">确定</string>
     <string name="cancel">取消</string>
     <string name="take_photo">拍摄照片</string>
     <string name="choose_photo">选择照片</string>
     <string name="forbidden">连接错误  code：409</string>
     <string name="not_found">信息丢失</string>
-    <string name="can_not_connect">数据在天上飞，暂时无法获取</string>
-    <string name="retry">轻点重试</string>
-    <string name="status_text_empty">啥也没有呢</string>
+    <string name="can_not_connect">网络不给力</string>
+    <string name="retry">重新加载</string>
+    <string name="status_text_empty">当前列表无数据</string>
+    <string name="common_token_expired">登录状态失效，请重新登录</string>
 </resources>

@@ -24,20 +24,20 @@ public class LogInterceptor implements okhttp3.Interceptor {
     public Response intercept(Chain chain) throws IOException {
         Request request = chain.request();
         long start = System.currentTimeMillis();
-        Log.e(TAG, "request url:" + request.url() + " request body is " + (request.body() != null ? bodyToString(request) : null)+"  token is "+request.header("Authorization"));
+        Log.e(TAG, "request url:" + request.url() + " request body is " + (request.body() != null ? bodyToString(request) : null) + "  token is " + request.header("Authorization"));
         Response response = chain.proceed(request);
-        String bodyString ="";
-        if (response!=null&&response.body()!=null){
-             bodyString = response.body().string();
+        String bodyString = "";
+        if (response != null && response.body() != null) {
+            bodyString = unicodeToUTF_8(response.body().string());
         }
         long end = System.currentTimeMillis();
         Log.e(TAG, "response from url:" + response.request().url() + " ----------in  " + (end - start) +
                 "ms \n response code is  " + response.code() + "  and response body is " + bodyString);
 
-        return response.newBuilder().body(ResponseBody.create(MediaType.parse("UTF-8"),bodyString)).build();
+        return response.newBuilder().body(ResponseBody.create(MediaType.parse("UTF-8"), bodyString)).build();
     }
 
-    private  String bodyToString(final Request request) {
+    private String bodyToString(final Request request) {
         try {
             final Request copy = request.newBuilder().build();
             final Buffer buffer = new Buffer();
@@ -49,6 +49,31 @@ public class LogInterceptor implements okhttp3.Interceptor {
             return "{\"err\": \"" + e.getMessage() + "\"}";
         }
     }
+
+    private static String unicodeToUTF_8(String src) {
+        if (null == src) {
+            return null;
+        }
+        StringBuilder out = new StringBuilder();
+        for (int i = 0; i < src.length(); ) {
+            char c = src.charAt(i);
+            if (i + 6 < src.length() && c == '\\' && src.charAt(i + 1) == 'u') {
+                String hex = src.substring(i + 2, i + 6);
+                try {
+                    out.append((char) Integer.parseInt(hex, 16));
+                } catch (NumberFormatException nfe) {
+                    nfe.fillInStackTrace();
+                }
+                i = i + 6;
+            } else {
+                out.append(src.charAt(i));
+                ++i;
+            }
+        }
+        return out.toString();
+
+    }
+
 
     static String getJsonString(String msg) {
         String message;

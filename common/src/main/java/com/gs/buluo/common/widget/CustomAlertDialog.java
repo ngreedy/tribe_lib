@@ -90,15 +90,15 @@ public class CustomAlertDialog extends Dialog {
 
         public Builder setPositiveButton(String positiveButtonText,
                                          OnClickListener listener) {
-            this.positiveButtonText = positiveButtonText;
-            this.positiveButtonClickListener = listener;
+            this.negativeButtonText = positiveButtonText;
+            this.negativeButtonClickListener = listener;
             return this;
         }
 
         public Builder setNegativeButton(String negativeButtonText,
                                          OnClickListener listener) {
-            this.negativeButtonText = negativeButtonText;
-            this.negativeButtonClickListener = listener;
+            this.positiveButtonText = negativeButtonText;
+            this.positiveButtonClickListener = listener;
             return this;
         }
 
