@@ -3,9 +3,6 @@ package com.gs.buluo.common.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.AttrRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -17,6 +14,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.annotation.AttrRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.gs.buluo.common.R;
 
@@ -45,20 +46,21 @@ public class StatusLayout extends FrameLayout {
     private ProgressBar progressBar;
 
     private View currentShowingView;
+
     public StatusLayout(@NonNull Context context) {
-        this(context,null);
+        this(context, null);
     }
 
     public StatusLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
-        this(context, attrs,0);
+        this(context, attrs, 0);
     }
 
     public StatusLayout(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context,attrs);
+        init(context, attrs);
     }
 
-    private void init(Context context,  AttributeSet attrs) {
+    private void init(Context context, AttributeSet attrs) {
         parseAttrs(context, attrs);
 
         emptyView.setVisibility(View.GONE);

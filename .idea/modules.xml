@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\tribe_lib\app\app.iml" filepath="E:\tribe_lib\app\app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
-      <module fileurl="file://E:\tribe_lib\common\common.iml" filepath="E:\tribe_lib\common\common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/tribe_lib.iml" filepath="$PROJECT_DIR$/.idea/tribe_lib.iml" />
-      <module fileurl="file://E:\tribe_lib\tribe_lib.iml" filepath="E:\tribe_lib\tribe_lib.iml" />
-      <module fileurl="file://D:\Android Project\tribe_lib\tribe_lib.iml" filepath="D:\Android Project\tribe_lib\tribe_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="tribe_lib/app" />
+      <module fileurl="file://$PROJECT_DIR$/appupdateX/appupdateX.iml" filepath="$PROJECT_DIR$/appupdateX/appupdateX.iml" group="tribe_lib/appupdateX" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" group="tribe_lib/common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tribe_lib.iml" filepath="$PROJECT_DIR$/.idea/tribe_lib.iml" group="tribe_lib" />
     </modules>
   </component>
 </project>

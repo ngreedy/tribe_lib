@@ -1,6 +1,7 @@
 package com.gs.buluo.common.network;
 
 import android.util.Base64;
+import android.view.animation.RotateAnimation;
 
 /**
  * Created by hjn91 on 2018/1/30.
@@ -11,6 +12,7 @@ public class QueryMapBuilder {
     private static SortedTreeMap<String, String> sortedMap;
 
     private QueryMapBuilder() {
+
     }
 
     public static QueryMapBuilder getIns() {

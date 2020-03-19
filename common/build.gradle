@@ -1,17 +1,18 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.ngreedy'
+group = 'com.github.ngreedy'
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.2'
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 17
-        targetSdkVersion 25
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -22,22 +23,31 @@ android {
         }
     }
 }
-ext {
-    rxjavaVersion = '2.3.0'
-    supportLibVersion = '25.0.0'
-}
-
 dependencies {
 
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    //noinspection GradleCompatible
-    compile "com.android.support:recyclerview-v7:$supportLibVersion"
-    compile "com.android.support:appcompat-v7:$supportLibVersion"
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
-    testCompile 'junit:junit:4.12'
-    compile "com.squareup.retrofit2:converter-gson:$rxjavaVersion"
-    compile "com.squareup.retrofit2:adapter-rxjava2:$rxjavaVersion"
-    compile "com.squareup.retrofit2:retrofit:$rxjavaVersion"
-    compile "io.reactivex.rxjava2:rxandroid:2.0.1"
-    compile "org.greenrobot:eventbus:3.0.0"
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation rootProject.ext.dependence.material
+    implementation rootProject.ext.dependence.recyclerview
+    implementation rootProject.ext.dependence.constraintlayout
+    implementation rootProject.ext.dependence.ktx
+    implementation rootProject.ext.dependence.multidex
+    implementation rootProject.ext.dependence.permissions
+
+    implementation rootProject.ext.dependence.lifecycle
+    implementation rootProject.ext.dependence.lifecycleExtensions
+    implementation rootProject.ext.dependence.lifecyclejava
+    implementation rootProject.ext.dependence.livedataKtx
+    implementation rootProject.ext.dependence.eventBus
+    implementation  rootProject.ext.dependence.rxjava
+    implementation  rootProject.ext.dependence.rxjava
+    implementation  rootProject.ext.dependence.rxjava
+    implementation  rootProject.ext.dependence.rxAndroid
+    api rootProject.ext.dependence.retrofit2
+
+}
+repositories {
+    mavenCentral()
 }
